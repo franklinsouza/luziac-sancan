@@ -9,7 +9,7 @@
     
     <ul class="text-uppercase">
 	  	<li><a href="/" title="Home">HOME</a></li>
-	  	{currentPath && <li><a href={`/${currentPath}`}>{currentPath}</a></li>}
+	  	{currentPath && <li><a href={`/${currentPath}`} title={currentPath}>{currentPath}</a></li>}
       <li>{title}</li>
 	  </ul>
   </div>
