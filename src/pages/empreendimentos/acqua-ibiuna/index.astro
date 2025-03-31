@@ -4,6 +4,7 @@ import SingleHeader from "../../../components/layout/SingleHeader.astro";
 import Chamada from "../../../components/layout/Chamada.astro";
 import Image from "astro/components/Image.astro";
 
+import bgSection from '../../../assets/images/acqua-ibiuna/jetski.webp';
 import foto1 from '../../../assets/images/acqua-ibiuna/1-800x500.webp';
 import foto2 from '../../../assets/images/acqua-ibiuna/2-800x500.webp';
 import foto3 from '../../../assets/images/acqua-ibiuna/3-800x500.webp';
@@ -16,13 +17,13 @@ import foto9 from '../../../assets/images/acqua-ibiuna/9-800x500.webp';
 ---
 
 <Layout title="Acqua Ibiúna">
-  <SingleHeader title={'Acqua Ibiúna'}/>
+  <SingleHeader title={'Acqua Ibiúna'} currentPath={"empreendimentos"}/>
 
   <section class="content-section no-bottom-spacing">
     <div class="container">
       <div class="row">
       <div class="col-lg-5">
-         <div class="section-title text-left">
+         <div class="section-title text-left mb-4">
             <h6 class="text-uppercase">A Vida que Você Sempre Sonhou</h6>
             <h2>Imagine viver seus <span class="primary-color">melhores</span> dias todos os dias</h2>
           </div>
@@ -257,7 +258,7 @@ import foto9 from '../../../assets/images/acqua-ibiuna/9-800x500.webp';
   </section>
   <!-- end content-section -->	
 
-  <section class="content-section no-spacing bg-full" data-background="/src/assets/images/acqua-ibiuna/jetski.webp">
+  <section class="content-section no-spacing bg-full" data-background={`${bgSection.src}`}>
     <div class="container">
       <div class="row justify-content-end">
         <div class="col-lg-6 col-md-9">

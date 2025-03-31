@@ -4,6 +4,7 @@ import Layout from "../../../layouts/Layout.astro";
 import SingleHeader from "../../../components/layout/SingleHeader.astro";
 import Chamada from "../../../components/layout/Chamada.astro";
 
+import bgSection from '../../../assets/images/natura-granja-viana/bg-section-tour.webp';
 import foto1 from '../../../assets/images/natura-granja-viana/1-1500x1500.webp';
 import foto2 from '../../../assets/images/natura-granja-viana/2-1500x1500.webp';
 import foto3 from '../../../assets/images/natura-granja-viana/3-1500x1500.webp';
@@ -19,13 +20,13 @@ import foto12 from '../../../assets/images/natura-granja-viana/12-1500x1500.webp
 ---
 
 <Layout title="Natura Granja Viana">
-  <SingleHeader title={'Natura Granja Viana'}/>
+  <SingleHeader title={'Natura Granja Viana'} currentPath={"empreendimentos"}/>
 
   <section class="content-section no-bottom-spacing">
     <div class="container">
       <div class="row">
       <div class="col-lg-5">
-        <div class="section-title text-left">
+        <div class="section-title text-left mb-4">
           <h6>VIVA MOMENTOS INESQUECÍVEIS</h6>
           <h2>Natureza e praticidade ao seu alcance.</h2>
         </div>
@@ -236,7 +237,7 @@ import foto12 from '../../../assets/images/natura-granja-viana/12-1500x1500.webp
   </section>
   <!-- end content-section -->	
 
-  <section class="content-section no-spacing bg-full" data-background="/src/assets/images/natura-granja-viana/bg-section-tour.webp">
+  <section class="content-section no-spacing bg-full" data-background={`${bgSection.src}`}>
     <div class="container">
       <div class="row justify-content-end">
         <div class="col-lg-6 col-md-9">

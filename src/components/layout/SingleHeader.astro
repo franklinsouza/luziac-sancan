@@ -1,5 +1,5 @@
 ---
-  const  { title, subtitle } = Astro.props;
+  const  { title, subtitle, currentPath } = Astro.props;
 ---
 
 <header class="page-header">
@@ -9,7 +9,7 @@
     
     <ul class="text-uppercase">
 	  	<li><a href="/" title="Home">HOME</a></li>
-	  	<li>Quem Somos</li>
+	  	{currentPath && <li><a href={`/${currentPath}`}>{currentPath}</a></li>}
       <li>{title}</li>
 	  </ul>
   </div>
