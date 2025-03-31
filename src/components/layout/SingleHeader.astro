@@ -1,0 +1,17 @@
+---
+  const  { title, subtitle } = Astro.props;
+---
+
+<header class="page-header">
+  <div class="container">
+    <h1 class="text-uppercase mb-4">{title}</h1>
+    {subtitle && <h6>{subtitle}</h6> }
+    
+    <ul class="text-uppercase">
+	  	<li><a href="/" title="Home">HOME</a></li>
+	  	<li>Quem Somos</li>
+      <li>{title}</li>
+	  </ul>
+  </div>
+  <!-- end container --> 
+</header>

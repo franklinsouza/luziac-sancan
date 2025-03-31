@@ -1,0 +1,115 @@
+---
+import Image from "astro/components/Image.astro";
+import SingleHeader from "../../components/layout/SingleHeader.astro";
+import Chamada from "../../components/layout/Chamada.astro";
+import Layout from "../../layouts/Layout.astro";
+
+import iconFone from "../../assets/images/icon-phone.png";
+import iconGlobal from "../../assets/images/icon-global.png";
+import iconEmail from "../../assets/images/icon-email.png";
+---
+
+<Layout title="Contato">
+  <SingleHeader title="Contato"/>
+  <section class="content-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="contact-box"> 
+            <div class="mb-4">
+              <Image src={iconGlobal} width="55" height="55" alt="Image" />
+            </div>
+            <h6>Visite-nos</h6>
+            <p>Rua Henrique Monteiro, 90 - 5º andar - São Paulo</p>
+            <p>Seg. a sex. De 9:00 às 17:00</p>
+          </div>
+          <!-- end contact-box --> 
+        </div>
+        <!-- end col-4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="contact-box"> 
+            <div class="mb-4">
+              <Image src={iconFone} width="55" height="55" alt="Image" />
+            </div>
+            <h6>Telefone</h6>
+             <p>(11) 3812-8834</p>
+             <br />
+             <br />
+             <br />
+          </div>
+          <!-- end contact-box --> 
+        </div>
+        <!-- end col-4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="contact-box"> 	
+            <div class="mb-4">
+              <Image src={iconEmail} width="55" height="55" alt="Image" />
+            </div>
+            <h6>Email</h6>
+            <p><a href="mailto:contato@sancan.com.br">contato@sancan.com.br</a></p>
+            <br />
+            <br />
+            <br />
+          </div>
+          <!-- end contact-box --> 
+        </div>
+        <!-- end col-4 -->
+      </div>
+      <!-- end row --> 
+    </div>
+    <!-- end container --> 
+  </section>
+  <!-- end content-section -->
+    <section class="content-section no-spacing">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-title text-left">
+            <h6>ENTRE EM CONTATO</h6>
+            <h2>Estamos aqui<br />para te ouvir.</h2>
+          </div>
+          <!-- end section-title --> 
+        </div>
+        <!-- end col-6 -->
+        <div class="col-lg-6">
+     <form class="contact-form">
+          <div class="form-group">
+         <span>Nome</span>
+          <input type="text"></input>
+       </div>
+       <!-- end form-group -->
+          <div class="form-group">
+         <span>E-mail</span>
+          <input type="text"></input>
+       </div>
+       <!-- end form-group -->
+          <div class="form-group">
+         <span>Assunto</span>
+          <input type="text"></input>
+       </div>
+       <!-- end form-group -->
+          <div class="form-group">
+         <span>Menssagem</span>
+          <textarea></textarea>
+       </div>
+       <!-- end form-group -->
+          <div class="form-group">
+         <input type="submit" value="Enviar">
+       </div>
+       <!-- end form-group -->
+        </form>
+        <!-- end contact-form -->
+        </div>
+        <!-- end col-6 -->
+      </div>
+      <!-- end row --> 
+    </div>
+    <!-- end container --> 
+  </section>
+  <!-- end content-section -->
+      <section class="content-section no-spacing">
+    <iframe src="https://www.google.com/maps/embed/v1/place?q=Rua+Henrique+Monteiro,+90+-+Pinheiros,+São+Paulo+-+SP,+Brasil&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" frameborder="0" class="google-maps" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </section>
+  <!-- end content-section -->
+  <Chamada />
+</Layout>

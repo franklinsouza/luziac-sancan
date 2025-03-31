@@ -1,0 +1,70 @@
+---
+import { Image } from 'astro:assets';
+import Logo from '../../../public/images/logo.svg';
+---
+<aside class="side-widget">
+  <div class="inner">
+    <div class="logo"> 
+      <a href="/" title="Sancan">
+        <Image src={Logo} alt="Sancan" width="169" height="40"></Image>
+      </a> 
+    </div>
+    <!-- end logo -->
+    <div class="show-mobile">
+      <div class="site-menu">
+        <ul>
+          <li><a href="/" title="Home">Home</a></li>
+          <li><a href="/sobre" title="Quem somos">Quem somos</a></li>
+          <li><a href="/empreendimentos" title="Empreendimentos">Empreendimentos</a></li>
+          <li><a href="/contato" title="Contato">Contato</a></li>
+        </ul>
+      </div>
+      <!-- end site-menu --> 
+    </div>
+    <!-- end show-mobile -->
+  </div>
+  <!-- end inner --> 
+</aside>
+<!-- end side-widget -->
+
+<nav class="navbar">
+  <div class="container">
+    <div class="logo"> 
+      <a href="/">
+        <Image src={Logo} alt="Sancan" width="169" height="40">
+      </a> 
+    </div>
+    <!-- end logo -->
+    <div class="site-menu">
+      <ul>
+        <li><a href="/" title="Home">Home</a></li>
+        <li><a href="/sobre" title="Quem somos">Quem somos</a></li>
+        <li>
+          <a href="/empreendimentos" title="Empreendimentos">Empreendimentos</a>
+          <ul class="dropdown">
+            <li>
+              <a href="/empreendimentos/natura-granja-viana" title="Natura Granja Viana">
+              Natura Granja Viana
+              </a>
+            </li>
+            <li><a href="/empreendimentos/acqua-ibiuna" title="Acqua Ibiúna">Acqua Ibiúna</a></li>
+            <li><a href="/empreendimentos/hub-br" title="Hub BR">Hub BR</a></li>
+            <li><a href="/empreendimentos/reserva-nova-caucaia" title="Reserva Nova Caucaia">Reserva Nova Caucaia</a></li>
+            <li><a href="/empreendimentos/roselandia-alvorada" title="Roselandia Alvorada">Roselandia Alvorada</a></li>
+          </ul>
+        </li>
+        <li><a href="/contato" title="Contato">Contato</a></li>
+      </ul>
+    </div>
+    <!-- end site-menu -->
+
+    <a href="#sales-specialist-form" class="navbar-button" data-fancybox title="Fale com a gente"><i class="lni lni-mobile"></i> <span>FALE COM A GENTE</span></a> 
+
+    <div class="hamburger">
+      <div id="hamburger"> <span></span> <span></span> <span></span> </div>
+      <div id="cross"> <span></span> <span></span> </div>
+    </div>
+    <!-- end hamburger --> 
+  </div>
+  <!-- end container --> 
+</nav>

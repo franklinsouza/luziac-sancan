@@ -1,0 +1,189 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Empreendimentos from '../components/home/empreendimentos.astro';
+import Parceiros from '../components/layout/Parceiros.astro';
+import Chamada from '../components/layout/Chamada.astro';
+import Video from '../assets/header.mp4';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title="Home">
+	<header class="slider white-space-bottom">
+		<div class="container">
+			<div class="swiper-container slider-content">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="inner">
+							<h2>Desde 1954 atuando no setor de empreendimentos imobiliários</h2>
+							<a href="/empreendimentos">CONHEÇA NOSSOS EMPREENDIMENTOS <i class="lni lni-arrow-right"></i></a> </div>
+						<!-- end inner --> 
+					</div>
+					<!-- end swiper-slide -->
+				</div>
+				<!-- end swiper-wrapper -->
+				
+			</div>
+			<!-- end slider-content -->
+			<div class="swiper-container slider-main">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="slide-image">
+							<video class="video" crossorigin="anonymous" preload="auto" muted="" loop="" tabindex="-1" autoplay="" src={Video}></video>
+						</div>
+					</div>
+					<!-- end swiper-slide -->
+				</div>
+				<!-- end swiper-wrapper -->
+				<div class="header-box"> <b>71</b> <small>ANOS DE EXPERIÊNCIA</small> </div>
+				<!-- end header-box --> 
+			</div>
+			<!-- end slider-main --> 
+		</div>
+		<!-- end container --> 
+	</header>
+	<!-- end slider -->
+
+	<section class="content-section intro">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12">
+					<div class="section-title">
+						<h2>Compartilhar o <span class="primary-color">sonho</span> da <span class="primary-color">casa própria</span> com cada pessoa com quem fazemos negócio e que acompanha nossa jornada <span class="primary-color">é nossa missão!</span></h2>
+					</div>
+					<!-- end section-title --> 
+				</div>
+				<!-- end col-12 -->
+	
+				<div class="col-lg-4 col-md-6">
+					<div class="counter-box"> 
+						<div>
+							<span class="odometer" data-count="7000" data-status="yes">0</span> 
+							<span class="value">+</span>
+						</div>
+						<h6>Lotes entregues</h6>
+					</div>
+					<!-- end counter-box --> 
+				</div>
+				<!-- end col-3 -->
+				<div class="col-lg-4 col-md-6">
+					<div class="counter-box"> 
+						<div>
+							<span class="odometer" data-count="80" data-status="yes">0</span> 
+							<span class="value">+</span>
+						</div>
+						<h6>Sobrados entregues</h6>
+					</div>
+					<!-- end counter-box --> 
+				</div>
+				<!-- end col-3 -->
+				<div class="col-lg-4 col-md-6">
+					<div class="counter-box"> 
+						<div>
+							<span class="odometer" data-count="1500" data-status="yes">0</span> 
+							<span class="value">+</span>
+						</div>
+						<h6>Unidades habitacionais</h6>
+					</div>
+					<!-- end counter-box --> 
+				</div>
+				<!-- end col-3 -->
+				
+			</div>
+			<!-- end row --> 
+		</div>
+		<!-- end container --> 
+	</section>
+	<!-- end content-section -->
+
+	<Empreendimentos />
+
+	<section class="content-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="section-title">
+						<h2>Modelo <b class="primary-color">SanCan</b> de morar bem!</h2>
+					</div>
+				</div>
+				<div class="col-lg-4 mb-4">
+					<div class="icon-content">
+						<figure>
+							<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#0C0C0C" viewBox="0 0 256 256"><path d="M114,80a14,14,0,1,1,14,14A14,14,0,0,1,114,80ZM66,80a62,62,0,0,1,124,0c0,58.81-56.61,91.83-59,93.21a6,6,0,0,1-6,0C122.61,171.83,66,138.81,66,80Zm12,0c0,44.52,38.81,73.49,50,80.91,11.18-7.42,50-36.38,50-80.91A50,50,0,0,0,78,80Zm124.08,69.51a6,6,0,1,0-4.16,11.25C215.5,167.25,226,175.94,226,184c0,16.08-40.25,34-98,34s-98-17.92-98-34c0-8.06,10.5-16.75,28.08-23.24a6,6,0,1,0-4.16-11.25C30.76,158.06,18,170.31,18,184c0,13.34,12.18,25.38,34.31,33.88C72.62,225.7,99.5,230,128,230s55.38-4.3,75.69-12.12C225.82,209.38,238,197.34,238,184,238,170.31,225.24,158.06,202.08,149.51Z"></path></svg>
+						</figure>
+						<h3>Compre o seu Lote</h3>
+						<small>Compre o seu lote em um empreendimento SanCan.</small> 
+					</div>
+					<!-- end icon-content --> 
+				</div>
+				<!-- end col-4 -->
+				<div class="col-lg-4 mb-4">
+					<div class="icon-content">
+						<figure>
+							<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#0C0C0C" viewBox="0 0 256 256"><path d="M216,74H174.74a46.41,46.41,0,0,0,6-4.48,27.56,27.56,0,0,0,9.22-20A30.63,30.63,0,0,0,158.5,18a27.56,27.56,0,0,0-20,9.22A57.1,57.1,0,0,0,128,45.76a57.1,57.1,0,0,0-10.48-18.53A27.56,27.56,0,0,0,97.5,18,30.63,30.63,0,0,0,66,49.51a27.56,27.56,0,0,0,9.22,20,45.74,45.74,0,0,0,6,4.48H40A14,14,0,0,0,26,88v32a14,14,0,0,0,14,14h2v66a14,14,0,0,0,14,14H200a14,14,0,0,0,14-14V134h2a14,14,0,0,0,14-14V88A14,14,0,0,0,216,74ZM135.77,63c2.25-12.12,6.29-21.75,11.69-27.85A15.68,15.68,0,0,1,158.86,30h.55A18.6,18.6,0,0,1,178,49.14a15.68,15.68,0,0,1-5.18,11.4C162.1,70,143.92,72.83,134.34,73.65,134.59,70.76,135,67.08,135.77,63ZM83.45,35.45A18.69,18.69,0,0,1,96.59,30h.55a15.68,15.68,0,0,1,11.4,5.18C118,45.9,120.83,64.08,121.65,73.66c-2.89-.25-6.57-.68-10.61-1.43C98.92,70,89.29,65.94,83.19,60.53A15.64,15.64,0,0,1,78,49.14,18.65,18.65,0,0,1,83.45,35.45ZM38,120V88a2,2,0,0,1,2-2h82v36H40A2,2,0,0,1,38,120Zm16,80V134h68v68H56A2,2,0,0,1,54,200Zm148,0a2,2,0,0,1-2,2H134V134h68Zm16-80a2,2,0,0,1-2,2H134V86h82a2,2,0,0,1,2,2Z"></path></svg>
+						</figure>
+						<h3>Ganhe o projeto da sua casa</h3>
+						<small>Escolha o projeto ideal para sua família com nosso parceiro InstaCasa.</small> 
+					</div>
+					<!-- end icon-content --> 
+				</div>
+				<!-- end col-4 -->
+				<div class="col-lg-4 mb-4">
+					<div class="icon-content">
+						<figure>
+							<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#0C0C0C" viewBox="0 0 256 256"><path d="M229.93,186.58A78,78,0,0,0,168.16,74.42,78,78,0,1,0,26.07,138.58L18.58,164A14,14,0,0,0,36,181.42l25.46-7.49a78,78,0,0,0,26.39,7.63,78,78,0,0,0,106.77,40.37L220,229.42A14,14,0,0,0,237.42,212ZM62,161.5a6.05,6.05,0,0,0-1.69.24l-27.77,8.17a2,2,0,0,1-2.48-2.48l8.17-27.77a6.05,6.05,0,0,0-.47-4.53,66,66,0,1,1,27.08,27.08A6,6,0,0,0,62,161.5Zm155.71,26.16,8.17,27.77a2,2,0,0,1-2.48,2.48l-27.77-8.17a6.06,6.06,0,0,0-4.53.47,66,66,0,0,1-90-28.4,77.92,77.92,0,0,0,71-94.68,66,66,0,0,1,46.07,96A6.05,6.05,0,0,0,217.74,187.66Z"></path></svg>
+						</figure>
+						<h3>Converse com nossos construtores credenciados*</h3>
+						<small>Faça orçamentos com construtores parceiros e escolha a melhor opção para você.</small> 
+					</div>
+					<!-- end icon-content --> 
+				</div>
+				<!-- end col-4 --> 
+				<div class="col-lg-4 mb-4">
+					<div class="icon-content">
+						<figure>
+							<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#0C0C0C" viewBox="0 0 256 256"><path d="M176,58H80a6,6,0,0,0-6,6v48a6,6,0,0,0,6,6h96a6,6,0,0,0,6-6V64A6,6,0,0,0,176,58Zm-6,48H86V70h84Zm30-80H56A14,14,0,0,0,42,40V216a14,14,0,0,0,14,14H200a14,14,0,0,0,14-14V40A14,14,0,0,0,200,26Zm2,190a2,2,0,0,1-2,2H56a2,2,0,0,1-2-2V40a2,2,0,0,1,2-2H200a2,2,0,0,1,2,2ZM98,148a10,10,0,1,1-10-10A10,10,0,0,1,98,148Zm40,0a10,10,0,1,1-10-10A10,10,0,0,1,138,148Zm40,0a10,10,0,1,1-10-10A10,10,0,0,1,178,148ZM98,188a10,10,0,1,1-10-10A10,10,0,0,1,98,188Zm40,0a10,10,0,1,1-10-10A10,10,0,0,1,138,188Zm40,0a10,10,0,1,1-10-10A10,10,0,0,1,178,188Z"></path></svg>
+						</figure>
+						<h3>Simule o financiamento</h3>
+						<small>Conheça a melhor forma para financiar seu terreno + casa com nosso correspondentes Caixa.</small> 
+					</div>
+					<!-- end icon-content --> 
+				</div>
+				<!-- end col-4 --> 
+				<div class="col-lg-4 mb-4">
+					<div class="icon-content">
+						<figure>
+							<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#0C0C0C" viewBox="0 0 256 256"><path d="M240,186H230V56.28l11.26-2.41a6,6,0,1,0-2.52-11.74l-224,48a6,6,0,0,0,2.52,11.74L26,100v86H16a6,6,0,0,0,0,12H240a6,6,0,0,0,0-12ZM38,97.42,218,58.85V186H190V128a6,6,0,0,0-6-6H72a6,6,0,0,0-6,6v58H38ZM178,154H78V134H178ZM78,166H178v20H78Z"></path></svg>
+						</figure>
+						<h3>Construa a casa dos seus sonhos</h3>
+						<small>Viva o seu sonho com quem mais importa!</small> 
+					</div>
+					<!-- end icon-content --> 
+				</div>
+				<!-- end col-4 --> 
+				<div class="col-lg-4 mb-4">
+					<div class="icon-content cta">
+						<figure>
+							<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#FFF" viewBox="0 0 256 256"><path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path></svg>
+						</figure>
+						<h3>Dê início a essa jornada</h3>
+						<p>Entre em contato agora com nossos especialistas e garanta seu lote do próximo empreendimento da SanCan.</p> 
+						<a href="#sales-specialist-form" class="button" data-fancybox title="Começar">
+							Começar
+						</a>
+					</div>
+					<!-- end icon-content --> 
+				</div>
+				<!-- end col-4 --> 
+			</div>
+			<!-- end row --> 
+		</div>
+		<!-- end container --> 
+	</section>
+	<!-- end content-section -->
+
+	<Parceiros />
+	
+	<Chamada />
+</Layout>

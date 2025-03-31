@@ -1,0 +1,108 @@
+---
+import Image from "astro/components/Image.astro";
+import Layout from "../../layouts/Layout.astro";
+import SingleHeader from "../../components/layout/SingleHeader.astro";
+import Parceiros from "../../components/layout/Parceiros.astro";
+import Chamada from "../../components/layout/Chamada.astro";
+
+import predio from "../../assets/images/sancan-predio.webp";
+import equipe from "../../assets/images/equipe.webp";
+---
+
+<Layout title="Sobre a Sancan">
+  <SingleHeader 
+    title={'Sobre a Sancan'} 
+    subtitle="Conheça um pouco da nossa história"
+  />
+
+  <section class="content-section no-bottom-spacing">
+    <div class="container">
+      <div class="row">
+      <div class="col-12">
+         <div class="section-title text-left">
+            <h6>NOSSA HISTÓRIA</h6>
+            <h2>Valorizamos respeito e transparência em nossas relações com os clientes, colaboradores, sócios, investidores e fornecedores.</h2>
+          </div>
+          <!-- end section-title --> 
+      </div>
+      <!-- end col-12 -->
+      <div class="col-md-7">
+        <figure>
+          <Image src={predio} alt="Hall prédio Sancan" width="705" height="350">
+        </figure>
+        <p>
+          Em 1954 foi constituída a sancan por iniciativa de seus fundadores, Arnaldo Pereira de Souza e Flávio Barone Pereira e, desde então, vem avançando dia após dia, por três gerações.
+        </p>
+        <p>
+          A visão de longo prazo e a vontade de fazer acontecer impulsionaram o objetivo de compartilhar com milhares de clientes a realização do sonho da casa própria. Um sonho tornado realidade, alcançado graças ao esforço e ao empenho de muitos colaboradores, parceiros e clientes. Compartilhar esse sonho com cada pessoa com quem fazemos negócio e que acompanha nossa jornada é nossa Missão.
+        </p>
+        <p>
+          Desde o início, paralelamente ao desenvolvimento dos loteamentos nas cidades de São Paulo, Osasco, Santo André, Jundiaí, São Bernardo do Campo, Cotia, Ibiúna, Taboão da Serra e Embu das Artes - onde foram desenvolvidos e entregues mais de 7.000 lotes, também ampliamos nossas atividades para o segmento da construção civil com mais de 1.500 unidades construídas.
+        </p>
+      </div>
+      <!-- end col-7 -->
+      <div class="col-md-5">
+        <figure>
+          <Image src={equipe} alt="Equipe Sancan" width="495" height="350">
+        </figure>
+        <p>
+          Atualmente, vivemos um momento estimulante que nos impulsiona ao incremento ainda maior de nossas atividades, desenvolvendo também empreendimentos próprios e parcerias, com ênfase na Grande São Paulo, onde nos propomos a atuar como investidores em áreas de terceiros.
+        </p>
+        <p>
+          Bem-vindos ao sonho! Conte conosco!
+        </p>
+      </div>
+      <!-- end col-5 -->
+      </div>
+      <!-- end row --> 
+    </div>
+    <!-- end container --> 
+  </section>
+  <!-- end content-section -->
+  <section class="content-section intro">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-md-6">
+          <div class="counter-box"> 
+            <div>
+              <span class="odometer" data-count="7000" data-status="yes">0</span> 
+              <span class="value">+</span>
+            </div>
+            <h6>Lotes entregues</h6>
+          </div>
+          <!-- end counter-box --> 
+        </div>
+        <!-- end col-3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="counter-box"> 
+            <div>
+              <span class="odometer" data-count="80" data-status="yes">0</span> 
+              <span class="value">+</span>
+            </div>
+            <h6>Sobrados entregues</h6>
+          </div>
+          <!-- end counter-box --> 
+        </div>
+        <!-- end col-3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="counter-box"> 
+            <div>
+              <span class="odometer" data-count="1500" data-status="yes">0</span> 
+              <span class="value">+</span>
+            </div>
+            <h6>Unidades habitacionais</h6>
+          </div>
+          <!-- end counter-box --> 
+        </div>
+        <!-- end col-3 -->
+        
+      </div>
+      <!-- end row --> 
+    </div>
+    <!-- end container --> 
+  </section>
+  <!-- end content-section -->
+
+  <Parceiros />
+  <Chamada />
+</Layout>

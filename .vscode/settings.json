@@ -1,0 +1,25 @@
+{
+  "folder-color.pathColors": [
+    {
+      "folderPath": "sancan-astro\\src\\components\\",
+      "color": "foldercolorizer.color_00cccc",
+      "badge": "🫡"
+    },
+    {
+      "folderPath": "sancan-astro\\src\\pages\\",
+      "color": "foldercolorizer.color_ff6600"
+    },
+    {
+      "folderPath": "sancan-astro\\src\\",
+      "color": "foldercolorizer.color_0066ff"
+    },
+    {
+      "folderPath": "sancan-astro\\src\\layouts\\",
+      "color": "foldercolorizer.color_00ee00"
+    },
+    {
+      "folderPath": "sancan-astro\\public\\",
+      "color": "foldercolorizer.color_ff00cc"
+    }
+  ]
+}

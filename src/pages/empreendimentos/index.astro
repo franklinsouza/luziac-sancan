@@ -1,0 +1,92 @@
+---
+import Image from "astro/components/Image.astro";
+import Layout from "../../layouts/Layout.astro";
+import SingleHeader from "../../components/layout/SingleHeader.astro";
+import Chamada from "../../components/layout/Chamada.astro";
+
+import NaturaGranjaViana from '../../assets/images/natura.webp';
+import RoselandiaAlvorada from '../../assets/images/roselandia-alvorada.webp';
+import AquaIbiuna from '../../assets/images/acqua-ibiuna.webp';
+import ReservaNovaCaucaia from '../../assets/images/reserva-nova-caucaia.webp';
+import HubBr from '../../assets/images/hub-br.webp';
+---
+
+<Layout title="Empreendimentos">
+  <SingleHeader title="Empreendimentos" subtitle="Small Programs Perfect For Beginners To Get Started With Personal Growth"/>
+  <section class="content-section">
+    <div class="container">
+      <div class="row">
+      <!-- end col-12 -->
+        <div class="col-12">
+          <ul class="projects">
+            <li class="one">
+            <figure class="project-box"> 
+              <a href="/empreendimentos/natura-granja-viana" title="Natura Granja Viana">
+                <Image src={NaturaGranjaViana} alt="Natura Granja Viana" width="709" height="466">
+              </a>
+              <figcaption>
+                <h5>Natura Granja Viana</h5>
+              </figcaption>
+            </figure>
+              <!-- end project-box -->
+            </li>
+            <!-- end li -->
+            <li class="two">
+            <figure class="project-box"> 
+              <a href="/empreendimentos/roselandia-alvorada.html" title="Roselândia Alvorada">
+                <Image src={RoselandiaAlvorada} alt="Roselândia Alvorada" width="709" height="466">
+              </a>
+              <figcaption>
+                <h5>Roselândia Alvorada</h5>
+              </figcaption>
+            </figure>
+              <!-- end project-box -->
+            </li>
+            <!-- end li -->
+            <li class="three">
+            <figure class="project-box"> 
+              <a href="/empreendimentos/acqua-ibiuna.html" title="Acqua Ibiúna">
+                <Image src={AquaIbiuna} alt="Acqua Ibiúna" width="709" height="466">
+              </a>
+              <figcaption>
+                <h5>Acqua Ibiúna</h5>
+              </figcaption>
+            </figure>
+              <!-- end project-box -->
+            </li>
+            <!-- end li -->
+            <li class="one">
+            <figure class="project-box"> 
+              <a href="/empreendimentos/reserva-nova-caucaia.html" title="Reserva Nova Caucaia">
+                <Image src={ReservaNovaCaucaia} alt="Reserva Nova Caucaia" width="709" height="466">
+              </a>
+              <figcaption>
+                <h5>Reserva Nova Caucaia</h5>
+              </figcaption>
+            </figure>
+              <!-- end project-box -->
+            </li>
+            <!-- end li -->
+            <li class="two">
+            <figure class="project-box"> 
+              <a href="/empreendimentos/hub-br" title="HUB.BR">
+                <Image src={HubBr} alt="HUB.BR" width="709" height="466">
+              </a>
+              <figcaption>
+                <h5>HUB.BR</h5>
+              </figcaption>
+            </figure>
+              <!-- end project-box -->
+            </li>
+            <!-- end li -->
+          </ul>
+        </div>
+        <!-- end col-12 -->
+      </div>
+      <!-- end row --> 
+    </div>
+    <!-- end container --> 
+  </section>
+  <!-- end content-section -->
+  <Chamada />
+</Layout>
