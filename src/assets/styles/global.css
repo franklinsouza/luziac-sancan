@@ -1219,7 +1219,7 @@ a:hover {
   flex-wrap: wrap;
   align-items: center;
   background-color: #3B3129;
-  background-image: url("/src/assets/images/header-pattern.png ");
+  /* background-image: url("/src/assets/images/header-pattern.png"); */
   background-size: cover;
   position: relative;
   padding: 80px 0 50px 0;

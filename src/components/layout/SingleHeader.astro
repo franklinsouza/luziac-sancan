@@ -1,8 +1,9 @@
 ---
+  import bg from '../../assets/images/header-pattern.png';
   const  { title, subtitle, currentPath } = Astro.props;
 ---
 
-<header class="page-header">
+<header class="page-header"  style={{'background-image': `url("${(bg.src)}") no-repeat`}}>
   <div class="container">
     <h1 class="text-uppercase mb-4">{title}</h1>
     {subtitle && <h6>{subtitle}</h6> }
