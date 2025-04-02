@@ -124,6 +124,7 @@ body {
 /* HTML TAGS */
 img {
   max-width: 100%;
+  height: auto;
 }
 
 figure {
@@ -1656,7 +1657,8 @@ a:hover {
   margin-bottom: -70%;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
-.contact-form input[type=text] {
+.contact-form input[type=text], 
+.contact-form input[type=email]{ 
   width: 100%;
 }
 .contact-form textarea {
