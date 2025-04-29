@@ -240,6 +240,7 @@
     slidesPerView: 4,
     spaceBetween: 20,
     loop: true,
+    autoHeight: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
