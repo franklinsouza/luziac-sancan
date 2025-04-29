@@ -931,6 +931,7 @@ a:hover {
   top: calc(100% + 20px);
   background: #FF4919;
   padding: 30px;
+  border-radius: 10px;
 }
 .navbar .site-menu ul li ul:before {
   content: "";
@@ -1226,6 +1227,7 @@ a:hover {
   border-radius: 5px;
 }
 .slider .slider-main .header-box b {
+  font-family: "Poppins", sans-serif;
   font-size: 90px;
   height: 90px;
   line-height: 1;
