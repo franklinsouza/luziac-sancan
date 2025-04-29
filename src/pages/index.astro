@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Empreendimentos from '../components/home/empreendimentos.astro';
+import Empreendimentos from '../components/layout/empreendimentos.astro';
+import Empreendimentos2 from '../components/layout/empreendimentos2.astro';
 import Parceiros from '../components/layout/Parceiros.astro';
 import Chamada from '../components/layout/Chamada.astro';
 import Video from '../assets/header.mp4';
@@ -97,7 +98,91 @@ import Video from '../assets/header.mp4';
 	</section>
 	<!-- end content-section -->
 
-	<Empreendimentos />
+	<section class="content-section white-space-bottom enterprise-section" data-background="#f3eeeb">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7">
+					<div class="section-title text-left">
+						<h6>CONHEÇA NOSSOS</h6>
+						<h2>Empreendimentos</h2>
+					</div>
+					<!-- end section-title --> 
+				</div>
+				<!-- end col-7 -->
+				<div class="col-lg-5">
+					<p>A SanCan está sempre em busca<br />das melhores áreas para implantação.</p>
+				</div>
+				<!-- end col-5 --> 
+			</div>
+			<!-- end row --> 
+		</div>
+		<!-- end container -->
+
+		<div class="container">
+			<Empreendimentos2 />
+		</div>
+
+		<div class="container">
+			<div class="col-12">
+				<div class="section-title">
+					<h2>Saiba a opinião dos <b class="primary-color">nossos clientes</b></h2>
+				</div>
+			</div>
+
+			<div class="testimonials-slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="testimonial">
+							<p>Consto Construction is one of the best general contractors we've worked with. The entire team tactfully delivered a project of exceptional quality while staying on schedule and under budget. We hope to work with Consto again in the near future!</p>
+							<i class="lni lni-quotation"></i>
+							<h6>William James</h6>
+							<small>Life Touch LLC</small> </div>
+						<!-- end testimonial --> 
+					</div>
+					<!-- end swiper-slide -->
+					<div class="swiper-slide">
+						<div class="testimonial">
+							<p>Consto was completely respectful of the building and its surroundings - they immediately became part of our team and they know teamwork! They kept the jobsite clean and safe; working with Consto is nothing short of a first class experience!</p>
+							<i class="lni lni-quotation"></i>
+							<h6>William James</h6>
+							<small>Life Touch LLC</small> </div>
+						<!-- end testimonial --> 
+					</div>
+					<!-- end swiper-slide -->
+					<div class="swiper-slide">
+						<div class="testimonial">
+							<p>Thank you for all of your hard work on our project…I seriously don’t know how you did it but it came together SO WELL. I know we are a particular bunch and want things a certain way but you guys did such an amazing job!</p>
+							<i class="lni lni-quotation"></i>
+							<h6>William James</h6>
+							<small>Life Touch LLC</small> </div>
+						<!-- end testimonial --> 
+					</div>
+					<!-- end swiper-slide -->
+					<div class="swiper-slide">
+						<div class="testimonial">
+							<p>I was truly impressed with Consto’s quality workmanship and the final product. Consto provided an outstanding team that completed our project on-time and on schedule with no disruption to the staff.</p>
+							<i class="lni lni-quotation"></i>
+							<h6>William James</h6>
+							<small>Life Touch LLC</small> </div>
+						<!-- end testimonial --> 
+					</div>
+					<!-- end swiper-slide --> 
+				</div>
+				<!-- end swiper-wrapper -->
+				<div class="controls">
+					<div class="button-prev"><i class="lni lni-arrow-left"></i></div>
+					<!-- end button-prev -->
+					<div class="button-next"><i class="lni lni-arrow-right"></i></div>
+					<!-- end button-next --> 
+				</div>
+				<!-- end controls --> 
+			</div>
+		</div>
+	</section>
+	<!-- end content-section -->
+
+
+
 
 	<section class="content-section">
 		<div class="container">

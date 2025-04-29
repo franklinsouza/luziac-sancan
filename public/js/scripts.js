@@ -182,7 +182,6 @@
     }
   });
 
-
   // TESTIMONIALS SLIDER
   var swiper = new Swiper('.testimonials-slider', {
     slidesPerView: 2,
@@ -236,6 +235,26 @@
     }
   });
 
+  // BUILD SLIDER
+  var swiper = new Swiper('.build-slider', {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      991: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+    }
+  });
 
   // // SLIDER
   // var mainslider = new Swiper('.slider-main', {
