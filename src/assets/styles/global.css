@@ -3835,10 +3835,6 @@ input::-moz-focus-inner, input::-moz-focus-outer {
     margin-top: 30px;
   }
 
-  .footer address {
-    margin-bottom: 50px;
-  }
-
   .footer .footer-bottom { 
     flex-direction: column;
     align-items: center;
