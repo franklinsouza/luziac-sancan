@@ -2843,6 +2843,7 @@ a:hover {
   padding: 30px;
   background: #fff;
   position: relative;
+  border-radius: 8px;
 }
 .testimonials-slider .testimonial:after {
   content: "";
