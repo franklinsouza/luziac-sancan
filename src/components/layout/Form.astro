@@ -11,66 +11,8 @@
       <input type="email" name="email" id="email" required>
     </div>
     <div class="form-group">
-      <button type="button" class="send sendt">ENVIAR</button>
+      <button type="button" class="send" data-type="modal">ENVIAR</button>
+      <div class="form-group status"></div> 
     </div>
-    <div class="form-group status"></div>  
   </form>
 </div>
-<script src="../../assets/js/sendform.js"></script>
-
-<script is:inline>
-  const sendButton = document.querySelector('.send');
-  const status = document.querySelector('.status');
-  
-  sendButton.addEventListener('click', () => {
-    let type = document.getElementById('type');
-    let name = document.getElementById('name');
-    let sobrenome = document.getElementById('sobrenome');
-    let email = document.getElementById('email');
-
-    status.innerText = '';
-
-    if(!name.value || !sobrenome.value || !email.value) {
-      status.innerText = 'Por favor, preencha todos os campos do formulário.';
-      return;
-    }
-    
-    sendmail(name, sobrenome, email);
-  });
-
-
-  const sendmail = async (name, sobrenome, email) => {
-    try {
-      sendButton.disabled = true;
-      sendButton.innerHTML = 'ENVIANDO...';
-
-      const data  = await fetch("/api/sendmail", {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ 
-          type: type.value,
-          name: name.value, 
-          sobrenome: sobrenome.value, 
-          email: email.value
-        })
-      });
-
-      const response = await data.json();
-      status.innerText = response.message;
-      
-      sendButton.innerHTML = 'ENVIAR';
-      sendButton.disabled = false;
-
-      name.value = '';
-      sobrenome.value = '';
-      email.value = '';
-
-    } catch (error) {
-      status.innerText = 'Erro ao enviar mensagem';
-      console.log(error);
-    }
-  }
-  
-</script>

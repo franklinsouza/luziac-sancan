@@ -3,23 +3,7 @@ import nodemailer from 'nodemailer';
 export const POST = async ({request}) => {
   if (request.headers.get("Content-Type") === "application/json") {
     const body = await request.json();
-    const { type, name, sobrenome, email, subject, msg } = body;
-
-    if(type == 'modal') {
-      if (!name || !sobrenome || !email) {
-        return new Response(
-          JSON.stringify({ message: "Por favor, preencha todos os campos do formulário." }),
-          { status: 400 }
-        );
-      }
-    }else {
-      if (!name || !email || !subject || !msg) {
-        return new Response(
-          JSON.stringify({ message: "Por favor, preencha todos os campos do formulário." }),
-          { status: 400 }
-        );
-      }
-    }
+    const { type } = body;
 
     let transporter = nodemailer.createTransport({
       host: import.meta.env.EMAIL_HOST,
@@ -34,27 +18,61 @@ export const POST = async ({request}) => {
     let message = {
       from: import.meta.env.FROM,
       to: import.meta.env.TO,
-      subject: `[SANCAN - Site] ${subject ? subject : 'Formulário de contato'}`,
-      html: `<h1>Mensagem</h1><br>
-      <b>Nome</b>: ${name}<br> 
-      <b>Sobrenome</b>: ${sobrenome ? sobrenome : '-'}<br>
-      <b>Email</b>: ${email}<br>
-      <b>Mensagem</b>: ${msg ? msg : '-'}`,
+      subject: '[SANCAN - Site] - Formulário de contato',
+      html: '<h1>Mensagem</h1>'
     };
-    
-    let mailresult;
+
+    if(type == 'modal') {
+      const { name, sobrenome, email } = body;
+      
+      if (!name || !sobrenome || !email) {
+        return new Response(
+          JSON.stringify({ 
+            message: "Por favor, preencha todos os campos do formulário." 
+          }),
+          { status: 400 }
+        );
+      }
+
+      message.html += `
+        <p><b>Nome</b>: ${name} ${sobrenome}</p>
+        <p><b>Email</b>: ${email}</p>`;
+
+    }else if(type == 'contact') {
+      const { name, email, subject, msg } = body; 
+
+      if (!name || !email || !subject || !msg) {
+        return new Response(
+          JSON.stringify({
+            message: "Por favor, preencha todos os campos do formulário."
+          }),
+          { status: 400 }
+        );
+      }
+
+      message.html += `
+        <p><b>Nome</b>: ${name}</p>
+        <p><b>Email</b>: ${email}</p>
+        <p><b>Assunto</b>: ${subject}</p>
+        <p><b>Mensagem</b>: ${msg}</p>`;
+    }
+
     try {
-      mailresult = await transporter.sendMail(message);
+      let mailresult = await transporter.sendMail(message);
 
       return new Response(
-        JSON.stringify({ message: "Mensagem enviada com sucesso!"}),
+        JSON.stringify({ 
+          message: "Mensagem enviada com sucesso!"
+        }),
         { status: 200 }
       );
     }catch (error){
       console.log('ERROR', error.response);
 
       return new Response(
-        JSON.stringify({ message: "Erro ao enviar mensagem, por favor tente novamente mais tarde." }),
+        JSON.stringify({ 
+          message: "Erro ao enviar mensagem, por favor tente novamente mais tarde." 
+        }),
         { status: 500 }
       );
     }

@@ -75,24 +75,26 @@ import iconEmail from "../../assets/images/icon-email.png";
           <form class="contact-form" method="POST" onsubmit="event => event.preventDefault();return false">
             <div class="form-group">
               <span>Nome *</span>
-              <input type="text" id="cname" required>
+              <input type="text" name="name" id="cname" required>
             </div>
             <div class="form-group">
               <span>E-mail *</span>
-              <input type="email" id="cemail" required>
+              <input type="email" name="email" id="cemail" required>
             </div>
             <div class="form-group">
               <span>Assunto *</span>
-              <input type="text" id="csubject" required>
+              <input type="text" name="subject" id="csubject" required>
             </div>
             <div class="form-group">
               <span>Menssagem *</span>
-              <textarea id="cmsg" required></textarea>
+              <textarea id="cmsg" name="msg" required></textarea>
             </div>
             <div class="form-group">
-              <button type="button" class="csend sendt">ENVIAR</button>
+              <button type="button" class="send" data-type="contact">
+                ENVIAR
+              </button>
+              <div class="form-group status"></div>  
             </div>
-            <div class="form-group cstatus"></div>  
           </form>
         </div>
       </div>
@@ -105,62 +107,3 @@ import iconEmail from "../../assets/images/icon-email.png";
   <!-- end content-section -->
   <Chamada />
 </Layout>
-
-<script src="../../assets/js/sendform.js"></script>
-
-<script is:inline>
-  const csendButton = document.querySelector('.csend');
-  const cstatus = document.querySelector('.cstatus');
-  
-  csendButton.addEventListener('click', () => {
-    let cname = document.getElementById('cname');
-    let cemail = document.getElementById('cemail');
-    let csubject = document.getElementById('csubject');
-    let cmsg = document.getElementById('cmsg');
-
-    cstatus.innerText = '';
-
-    if(!cname.value || !cemail.value || !csubject.value || !cmsg.value) {
-      cstatus.innerText = "Por favor, preencha todos os campos do formulário.";
-      return;
-    }
-    
-    csendmail(cname, cemail, csubject, cmsg);
-  });
-
-
-  const csendmail = async (name, email, subject, msg) => {
-    try {
-      csendButton.disabled = true;
-      csendButton.innerHTML = 'ENVIANDO...';
-
-      const data  = await fetch("/api/sendmail", {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ 
-          name: name.value, 
-          email: email.value,
-          subject: subject.value, 
-          msg: msg.value
-        })
-      });
-
-      const response = await data.json();
-      cstatus.innerText = response.message;
-      
-      csendButton.innerHTML = 'ENVIAR';
-      csendButton.disabled = false;
-
-      name.value = '';
-      email.value = '';
-      subject.value = '';
-      msg.value = '';
-
-    } catch (error) {
-      cstatus.innerText = 'Erro ao enviar mensagem';
-      console.log(error);
-    }
-  }
-</script>
