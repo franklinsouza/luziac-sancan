@@ -4,6 +4,7 @@ import SingleHeader from "../../../components/layout/SingleHeader.astro";
 import Chamada from "../../../components/layout/Chamada.astro";
 import Image from "astro/components/Image.astro";
 
+import logo from '../../../assets/images/acqua-ibiuna/logo.png';
 import bgSection from '../../../assets/images/acqua-ibiuna/jetski.webp';
 import foto1 from '../../../assets/images/acqua-ibiuna/1-800x500.webp';
 import foto2 from '../../../assets/images/acqua-ibiuna/2-800x500.webp';
@@ -16,8 +17,8 @@ import foto8 from '../../../assets/images/acqua-ibiuna/8-800x500.webp';
 import foto9 from '../../../assets/images/acqua-ibiuna/9-800x500.webp';
 ---
 
-<Layout title="Acqua Ibiúna">
-  <SingleHeader title={'Acqua Ibiúna'} currentPath={"empreendimentos"}/>
+<Layout title="Acqua Ibiúna" pageClass="page-acqua-ibiuna">
+  <SingleHeader title={'Acqua Ibiúna'} currentPath={"empreendimentos"} logoPage={logo}/>
 
   <section class="content-section no-bottom-spacing">
     <div class="container">
@@ -53,7 +54,102 @@ import foto9 from '../../../assets/images/acqua-ibiuna/9-800x500.webp';
   </section>
   <!-- end content-section -->
 
-  <section class="content-section no-bottom-spacing">
+    <section class="content-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title">
+              <h2>Não faltam <span class="primary-color">motivos</span> para querer estar aqui.</h2>
+          </div>
+          <!-- end section-title --> 
+        </div>
+        <!-- end col-12 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="core-values-box"> 
+            <figure>
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#000000" viewBox="0 0 256 256"><path d="M88,149.39a8,8,0,0,0,8-8V128h64v15.29a8,8,0,0,0,16,0V32a8,8,0,0,0-16,0V48H96V32a8,8,0,0,0-16,0V141.39A8,8,0,0,0,88,149.39ZM96,112V96h64v16Zm64-48V80H96V64ZM24,168a8,8,0,0,1,8-8c14.42,0,22.19,5.18,28.44,9.34C66,173.06,70.42,176,80,176s14-2.94,19.56-6.66c6.24-4.16,14-9.34,28.43-9.34s22.2,5.18,28.44,9.34c5.58,3.72,10,6.66,19.57,6.66s14-2.94,19.56-6.66c6.25-4.16,14-9.34,28.44-9.34a8,8,0,0,1,0,16c-9.58,0-14,2.94-19.56,6.66-6.25,4.16-14,9.34-28.44,9.34s-22.2-5.18-28.44-9.34C142,178.94,137.57,176,128,176s-14,2.94-19.56,6.66c-6.24,4.16-14,9.34-28.43,9.34s-22.19-5.18-28.44-9.34C46,178.94,41.58,176,32,176A8,8,0,0,1,24,168Zm208,40a8,8,0,0,1-8,8c-9.58,0-14,2.94-19.56,6.66-6.25,4.16-14,9.34-28.44,9.34s-22.2-5.18-28.44-9.34C142,218.94,137.57,216,128,216s-14,2.94-19.56,6.66c-6.24,4.16-14,9.34-28.43,9.34s-22.19-5.18-28.44-9.34C46,218.94,41.58,216,32,216a8,8,0,0,1,0-16c14.42,0,22.19,5.18,28.44,9.34C66,213.06,70.42,216,80,216s14-2.94,19.56-6.66c6.24-4.16,14-9.34,28.43-9.34s22.2,5.18,28.44,9.34c5.58,3.72,10,6.66,19.57,6.66s14-2.94,19.56-6.66c6.25-4.16,14-9.34,28.44-9.34A8,8,0,0,1,232,208Z"></path></svg>
+            </figure>
+            <h6>Lazer pensado para toda a família</h6>
+            <p>Piscinas, quadras poliesportivas, campo de futebol, espaço gourmet, academia, espaço bem-estar, playground, salão de jogos, praça do luau, trilha e lounge.</p>
+          </div>
+          <!-- end core-values-box --> 
+        </div>
+        <!-- end col-4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="core-values-box"> 
+        <figure>
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#000000" viewBox="0 0 256 256"><path d="M247.21,172.53A8,8,0,0,0,240,168H144V144h72a8,8,0,0,0,5.92-13.38L144,44.91V8a8,8,0,0,0-14.21-5l-104,128A8,8,0,0,0,32,144h96v24H16a8,8,0,0,0-6.25,13l29.6,37a15.93,15.93,0,0,0,12.49,6H204.16a15.93,15.93,0,0,0,12.49-6l29.6-37A8,8,0,0,0,247.21,172.53ZM197.92,128H144V68.69ZM48.81,128,128,30.53V128Zm155.35,80H51.84l-19.2-24H223.36Z"></path></svg>
+        </figure>
+            <h6>1 vaga náutica exclusiva</h6>
+            <p>Com serviços de apoio para seu conforto e segurança.</p>
+          </div>
+          <!-- end core-values-box --> 
+        </div>
+        <!-- end col-4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="core-values-box"> 	
+          <figure>
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#000000" viewBox="0 0 256 256"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"></path></svg>
+          </figure>
+            <h6>Excelente localização</h6>
+            <p>A menos de 80km de São Paulo e acesso por ótimas estradas.</p>
+          </div>
+          <!-- end core-values-box --> 
+        </div>
+        <!-- end col-4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="core-values-box"> 	
+          <figure>
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#000000" viewBox="0 0 256 256"><path d="M232,192H200V168h24a8,8,0,0,0,7.76-9.94l-32-128a8,8,0,0,0-15.52,0l-32,128A8,8,0,0,0,160,168h24v24H120V176h8a8,8,0,0,0,0-16h-8V144h8a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16h8v16H40a8,8,0,0,0,0,16h8v16H24a8,8,0,0,0,0,16H232a8,8,0,0,0,0-16ZM192,65l21.75,87h-43.5ZM64,144h40v16H64Zm0,32h40v16H64Zm52-80A28,28,0,1,0,88,68,28,28,0,0,0,116,96Zm0-40a12,12,0,1,1-12,12A12,12,0,0,1,116,56Z"></path></svg>
+          </figure>
+            <h6>Natureza exuberante</h6>
+            <p>Área de Proteção Ambiental.</p>
+          </div>
+          <!-- end core-values-box --> 
+        </div>
+        <!-- end col-4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="core-values-box"> 	
+          <figure>
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#000000" viewBox="0 0 256 256"><path d="M208,32H160a16,16,0,0,0-16,16V208a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,176H160V176h24a8,8,0,0,0,0-16H160V136h24a8,8,0,0,0,0-16H160V96h24a8,8,0,0,0,0-16H160V48h48V208ZM77.66,26.34a8,8,0,0,0-11.32,0l-32,32A8,8,0,0,0,32,64V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V64a8,8,0,0,0-2.34-5.66ZM48,176V80H64v96ZM80,80H96v96H80ZM72,43.31,92.69,64H51.31ZM48,208V192H96v16Z"></path></svg>
+          </figure>
+            <h6>Pronto para construir</h6>
+            <p>Infraestrutura 100% pronta para receber o projeto da sua nova casa!</p>
+          </div>
+          <!-- end core-values-box --> 
+        </div>
+        <!-- end col-4 -->
+      </div>
+      <!-- end row --> 
+    </div>
+    <!-- end container --> 
+  </section>
+  <!-- end content-section -->
+
+  <section class="content-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/AL6uASrFCBc?si=C_aTTRW51aVGah9W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <!-- end side-image --> 
+        </div>
+        <!-- end col-6 -->
+        <div class="col-lg-6">
+          <div class="side-content">
+            <h5>Faça sua vida acontecer ao lado<br /> de tudo que mais gosta.</h5>
+            <p>Aqui, o lazer e a diversão têm espaço dia e noite, com atrações para todas as idades</p>
+             </div>
+          <!-- end side-content --> 
+        </div>
+        <!-- end col-6 --> 
+      </div>
+      <!-- end row --> 
+    </div>
+    <!-- end container --> 
+  </section>
+  <!-- end content-section -->	
+
+  <section class="content-section">
     <div class="swiper-container project-slider">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -162,101 +258,6 @@ import foto9 from '../../../assets/images/acqua-ibiuna/9-800x500.webp';
     <!-- end project-slider --> 
   </section>
   <!-- end content-section -->
-
-  <section class="content-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title">
-              <h2>Não faltam <span class="primary-color">motivos</span> para querer estar aqui.</h2>
-          </div>
-          <!-- end section-title --> 
-        </div>
-        <!-- end col-12 -->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="core-values-box"> 
-            <figure>
-              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#000000" viewBox="0 0 256 256"><path d="M88,149.39a8,8,0,0,0,8-8V128h64v15.29a8,8,0,0,0,16,0V32a8,8,0,0,0-16,0V48H96V32a8,8,0,0,0-16,0V141.39A8,8,0,0,0,88,149.39ZM96,112V96h64v16Zm64-48V80H96V64ZM24,168a8,8,0,0,1,8-8c14.42,0,22.19,5.18,28.44,9.34C66,173.06,70.42,176,80,176s14-2.94,19.56-6.66c6.24-4.16,14-9.34,28.43-9.34s22.2,5.18,28.44,9.34c5.58,3.72,10,6.66,19.57,6.66s14-2.94,19.56-6.66c6.25-4.16,14-9.34,28.44-9.34a8,8,0,0,1,0,16c-9.58,0-14,2.94-19.56,6.66-6.25,4.16-14,9.34-28.44,9.34s-22.2-5.18-28.44-9.34C142,178.94,137.57,176,128,176s-14,2.94-19.56,6.66c-6.24,4.16-14,9.34-28.43,9.34s-22.19-5.18-28.44-9.34C46,178.94,41.58,176,32,176A8,8,0,0,1,24,168Zm208,40a8,8,0,0,1-8,8c-9.58,0-14,2.94-19.56,6.66-6.25,4.16-14,9.34-28.44,9.34s-22.2-5.18-28.44-9.34C142,218.94,137.57,216,128,216s-14,2.94-19.56,6.66c-6.24,4.16-14,9.34-28.43,9.34s-22.19-5.18-28.44-9.34C46,218.94,41.58,216,32,216a8,8,0,0,1,0-16c14.42,0,22.19,5.18,28.44,9.34C66,213.06,70.42,216,80,216s14-2.94,19.56-6.66c6.24-4.16,14-9.34,28.43-9.34s22.2,5.18,28.44,9.34c5.58,3.72,10,6.66,19.57,6.66s14-2.94,19.56-6.66c6.25-4.16,14-9.34,28.44-9.34A8,8,0,0,1,232,208Z"></path></svg>
-            </figure>
-            <h6>Lazer pensado para toda a família</h6>
-            <p>Piscinas, quadras poliesportivas, campo de futebol, espaço gourmet, academia, espaço bem-estar, playground, salão de jogos, praça do luau, trilha e lounge.</p>
-          </div>
-          <!-- end core-values-box --> 
-        </div>
-        <!-- end col-4 -->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="core-values-box"> 
-        <figure>
-          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#000000" viewBox="0 0 256 256"><path d="M247.21,172.53A8,8,0,0,0,240,168H144V144h72a8,8,0,0,0,5.92-13.38L144,44.91V8a8,8,0,0,0-14.21-5l-104,128A8,8,0,0,0,32,144h96v24H16a8,8,0,0,0-6.25,13l29.6,37a15.93,15.93,0,0,0,12.49,6H204.16a15.93,15.93,0,0,0,12.49-6l29.6-37A8,8,0,0,0,247.21,172.53ZM197.92,128H144V68.69ZM48.81,128,128,30.53V128Zm155.35,80H51.84l-19.2-24H223.36Z"></path></svg>
-        </figure>
-            <h6>1 vaga náutica exclusiva</h6>
-            <p>Com serviços de apoio para seu conforto e segurança.</p>
-          </div>
-          <!-- end core-values-box --> 
-        </div>
-        <!-- end col-4 -->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="core-values-box"> 	
-          <figure>
-            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#000000" viewBox="0 0 256 256"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"></path></svg>
-          </figure>
-            <h6>Excelente localização</h6>
-            <p>A menos de 80km de São Paulo e acesso por ótimas estradas.</p>
-          </div>
-          <!-- end core-values-box --> 
-        </div>
-        <!-- end col-4 -->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="core-values-box"> 	
-          <figure>
-            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#000000" viewBox="0 0 256 256"><path d="M232,192H200V168h24a8,8,0,0,0,7.76-9.94l-32-128a8,8,0,0,0-15.52,0l-32,128A8,8,0,0,0,160,168h24v24H120V176h8a8,8,0,0,0,0-16h-8V144h8a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16h8v16H40a8,8,0,0,0,0,16h8v16H24a8,8,0,0,0,0,16H232a8,8,0,0,0,0-16ZM192,65l21.75,87h-43.5ZM64,144h40v16H64Zm0,32h40v16H64Zm52-80A28,28,0,1,0,88,68,28,28,0,0,0,116,96Zm0-40a12,12,0,1,1-12,12A12,12,0,0,1,116,56Z"></path></svg>
-          </figure>
-            <h6>Natureza exuberante</h6>
-            <p>Área de Proteção Ambiental.</p>
-          </div>
-          <!-- end core-values-box --> 
-        </div>
-        <!-- end col-4 -->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="core-values-box"> 	
-          <figure>
-            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#000000" viewBox="0 0 256 256"><path d="M208,32H160a16,16,0,0,0-16,16V208a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,176H160V176h24a8,8,0,0,0,0-16H160V136h24a8,8,0,0,0,0-16H160V96h24a8,8,0,0,0,0-16H160V48h48V208ZM77.66,26.34a8,8,0,0,0-11.32,0l-32,32A8,8,0,0,0,32,64V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V64a8,8,0,0,0-2.34-5.66ZM48,176V80H64v96ZM80,80H96v96H80ZM72,43.31,92.69,64H51.31ZM48,208V192H96v16Z"></path></svg>
-          </figure>
-            <h6>Pronto para construir</h6>
-            <p>Infraestrutura 100% pronta para receber o projeto da sua nova casa!</p>
-          </div>
-          <!-- end core-values-box --> 
-        </div>
-        <!-- end col-4 -->
-      </div>
-      <!-- end row --> 
-    </div>
-    <!-- end container --> 
-  </section>
-  <!-- end content-section -->
-
-  <section class="content-section">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/AL6uASrFCBc?si=C_aTTRW51aVGah9W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <!-- end side-image --> 
-        </div>
-        <!-- end col-6 -->
-        <div class="col-lg-6">
-          <div class="side-content">
-            <h5>Faça sua vida acontecer ao lado<br /> de tudo que mais gosta.</h5>
-            <p>Aqui, o lazer e a diversão têm espaço dia e noite, com atrações para todas as idades</p>
-             </div>
-          <!-- end side-content --> 
-        </div>
-        <!-- end col-6 --> 
-      </div>
-      <!-- end row --> 
-    </div>
-    <!-- end container --> 
-  </section>
-  <!-- end content-section -->	
 
   <section class="content-section no-spacing bg-full" data-background={`${bgSection.src}`}>
     <div class="container">

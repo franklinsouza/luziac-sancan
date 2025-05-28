@@ -1,21 +1,39 @@
 ---
   import { getImage } from 'astro:assets';
+  import Image from "astro/components/Image.astro";
   import bg from '../../assets/images/header-pattern-3.png';
 
   const bgImage = await getImage({ src: bg });
-  const  { title, subtitle, currentPath } = Astro.props;
+  const  { title, subtitle, currentPath, logoPage } = Astro.props;
 ---
 
 <header class="page-header"  style={`background-image: url(${bgImage.src});`}>
   <div class="container">
-    <h1 class="text-uppercase mb-4">{title}</h1>
-    {subtitle && <h6>{subtitle}</h6> }
-    
-    <ul class="text-uppercase">
-	  	<li><a href="/" title="Home">HOME</a></li>
-	  	{currentPath && <li><a href={`/${currentPath}`} title={currentPath}>{currentPath}</a></li>}
-      <li>{title}</li>
-	  </ul>
+
+    {logoPage ? (
+      <div class="logo-content">
+        <Image src={logoPage} alt="Logo"/>
+      </div>
+    ) : (
+      <>
+        <h1 class="text-uppercase mb-4">{title}</h1>
+        {subtitle && <h6>{subtitle}</h6>}
+        
+        <ul class="text-uppercase">
+          <li><a href="/" title="Home">HOME</a></li>
+          {currentPath && (
+            <li>
+              <a href={`/${currentPath}`} title={currentPath}>
+                {currentPath}
+              </a>
+            </li>
+          )}
+          <li>{title}</li>
+        </ul>
+      </>
+    )}
+
+
   </div>
   <!-- end container --> 
 </header>

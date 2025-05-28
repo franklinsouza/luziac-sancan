@@ -362,11 +362,13 @@
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight) {
       // Scroll Down
-      $('.navbar').removeClass('nav-down').addClass('nav-up');
+      //$('.navbar').removeClass('nav-down').addClass('nav-up');
+      $('.navbar').removeClass('nav-down');
     } else {
       // Scroll Up
       if (st + $(window).height() < $(document).height()) {
-        $('.navbar').removeClass('nav-up').addClass('nav-down');
+        //$('.navbar').removeClass('nav-up').addClass('nav-down');
+        $('.navbar').addClass('nav-down');
       }
     }
 

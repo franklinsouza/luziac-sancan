@@ -4,6 +4,7 @@ import Layout from "../../../layouts/Layout.astro";
 import SingleHeader from "../../../components/layout/SingleHeader.astro";
 import Chamada from "../../../components/layout/Chamada.astro";
 
+import logo from '../../../assets/images/natura-granja-viana/logo.png';
 import bgSection from '../../../assets/images/natura-granja-viana/bg-section-tour.webp';
 import foto1 from '../../../assets/images/natura-granja-viana/1-1500x1500.webp';
 import foto2 from '../../../assets/images/natura-granja-viana/2-1500x1500.webp';
@@ -19,8 +20,8 @@ import foto11 from '../../../assets/images/natura-granja-viana/11-1500x1500.webp
 import foto12 from '../../../assets/images/natura-granja-viana/12-1500x1500.webp';
 ---
 
-<Layout title="Natura Granja Viana">
-  <SingleHeader title={'Natura Granja Viana'} currentPath={"empreendimentos"}/>
+<Layout title="Natura Granja Viana" pageClass="page-natura-granja">
+  <SingleHeader title={'Natura Granja Viana'} currentPath={"empreendimentos"} logoPage={logo}/>
 
   <section class="content-section no-bottom-spacing">
     <div class="container">
@@ -53,113 +54,6 @@ import foto12 from '../../../assets/images/natura-granja-viana/12-1500x1500.webp
       <!-- end row --> 
     </div>
     <!-- end container --> 
-  </section>
-  <!-- end content-section -->
-
-  <section class="content-section no-bottom-spacing">
-    <div class="swiper-container project-slider">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <figure class="project-box"> 
-            <a href={foto1.src} data-fancybox="gallery">
-              <Image src={foto1} alt="Imagem" width="680" height="680" />
-            </a>          
-          </figure>
-        </div>
-        <!-- end swiper-slide -->
-        <div class="swiper-slide">
-          <figure class="project-box"> 
-            <a href={foto2.src}  data-fancybox="gallery">
-              <Image src={foto2} alt="Imagem" width="680" height="680"/>
-            </a>          
-          </figure>
-        </div>
-        <!-- end swiper-slide -->
-        <div class="swiper-slide">
-          <figure class="project-box"> 
-            <a href={foto3.src}  data-fancybox="gallery">
-              <Image src={foto3} alt="Imagem" width="680" height="680"/>
-            </a>          
-          </figure>
-        </div>
-        <!-- end swiper-slide --> 
-        <div class="swiper-slide">
-          <figure class="project-box"> 
-            <a href={foto4.src}  data-fancybox="gallery">
-              <Image src={foto4} alt="Imagem" width="680" height="680"/>
-            </a>          
-          </figure>
-        </div>
-        <!-- end swiper-slide --> 
-        <div class="swiper-slide">
-          <figure class="project-box"> 
-            <a href={foto5.src}  data-fancybox="gallery">
-              <Image src={foto5} alt="Imagem" width="680" height="680"/>
-            </a>          
-          </figure>
-        </div>
-        <!-- end swiper-slide --> 
-        <div class="swiper-slide">
-          <figure class="project-box"> 
-            <a href={foto6.src}  data-fancybox="gallery">
-              <Image src={foto6} alt="Imagem" width="680" height="680"/>
-            </a>          
-          </figure>
-        </div>
-        <!-- end swiper-slide --> 
-        <div class="swiper-slide">
-          <figure class="project-box"> 
-            <a href={foto7.src}  data-fancybox="gallery">
-              <Image src={foto7} alt="Imagem" width="680" height="680"/>
-            </a>          
-          </figure>
-        </div>
-        <!-- end swiper-slide --> 
-        <div class="swiper-slide">
-          <figure class="project-box"> 
-            <a href={foto8.src}  data-fancybox="gallery">
-              <Image src={foto8} alt="Imagem" width="680" height="680"/>
-            </a>          
-          </figure>
-        </div>
-        <!-- end swiper-slide --> 
-        <div class="swiper-slide">
-          <figure class="project-box"> 
-            <a href={foto9.src}  data-fancybox="gallery">
-              <Image src={foto9} alt="Imagem" width="680" height="680"/>
-            </a>          
-          </figure>
-        </div>
-        <!-- end swiper-slide --> 
-        <div class="swiper-slide">
-          <figure class="project-box"> 
-            <a href={foto10.src}  data-fancybox="gallery">
-              <Image src={foto10} alt="Imagem" width="680" height="680"/>
-            </a>          
-          </figure>
-        </div>
-        <!-- end swiper-slide --> 
-        <div class="swiper-slide">
-          <figure class="project-box"> 
-            <a href={foto11.src}  data-fancybox="gallery">
-              <Image  src={foto11} alt="Imagem" width="680" height="680"/>
-            </a>          
-          </figure>
-        </div>
-        <!-- end swiper-slide --> 
-        <div class="swiper-slide">
-          <figure class="project-box"> 
-            <a href={foto12.src}  data-fancybox="gallery">
-              <Image src={foto12} alt="Imagem" width="680" height="680"/>
-            </a>          
-          </figure>
-        </div>
-        <!-- end swiper-slide --> 
-      </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-    </div>
-    <!-- end project-slider --> 
   </section>
   <!-- end content-section -->
 
@@ -214,51 +108,7 @@ import foto12 from '../../../assets/images/natura-granja-viana/12-1500x1500.webp
   </section>
   <!-- end content-section -->
 
-  <section class="content-section">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/0RBi-JS8_bc?si=83HrZlUaFOiDIrqm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <!-- end side-image --> 
-        </div>
-        <!-- end col-6 -->
-        <div class="col-lg-6">
-          <div class="side-content">
-            <h5>Sinta o prazer de viver bem</h5>
-            <p>No Natura Granja Viana, você poderá respirar fundo e aproveitar uma vida marcada por muita segurança, conforto e bem-estar com um mundo de possibilidades logo ali. O lugar perfeito para multiplicar momentos memoráveis.</p>
-             </div>
-          <!-- end side-content --> 
-        </div>
-        <!-- end col-6 --> 
-      </div>
-      <!-- end row --> 
-    </div>
-    <!-- end container --> 
-  </section>
-  <!-- end content-section -->	
-
-  <section class="content-section no-spacing bg-full" data-background={`${bgSection.src}`}>
-    <div class="container">
-      <div class="row justify-content-end">
-        <div class="col-lg-6 col-md-9">
-          <div class="services-list-box">
-            <h4>O seu lote já vem com projeto</h4>
-            <p>Ganhe acesso a uma plataforma com dezenas de projetos de casas feitas especialmente para o loteamento e que se encaixam perfeitamente no seu lote. Depois, é só escolher a sua preferida sem nenhum custo adicional.</p>
-            <a href="https://tour.instacasa.com.br/natura-granja-viana/" class="button text-uppercase" target="_blank" title="Acesse o tour">
-              Acesse o tour
-            </a> 
-          </div>
-          <!-- end services-list-box --> 
-        </div>
-        <!-- end col-6 --> 
-      </div>
-      <!-- end row --> 
-    </div>
-    <!-- end container --> 
-  </section>
-  <!-- end content-section -->
-  
-  <section class="content-section icons-section">
+    <section class="content-section icons-section">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -546,6 +396,158 @@ import foto12 from '../../../assets/images/natura-granja-viana/12-1500x1500.webp
           </ul>
           <!-- end section-title --> 
         </div>
+      </div>
+      <!-- end row --> 
+    </div>
+    <!-- end container --> 
+  </section>
+  <!-- end content-section -->
+
+    <section class="content-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/0RBi-JS8_bc?si=83HrZlUaFOiDIrqm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <!-- end side-image --> 
+        </div>
+        <!-- end col-6 -->
+        <div class="col-lg-6">
+          <div class="side-content">
+            <h5>Sinta o prazer de viver bem</h5>
+            <p>No Natura Granja Viana, você poderá respirar fundo e aproveitar uma vida marcada por muita segurança, conforto e bem-estar com um mundo de possibilidades logo ali. O lugar perfeito para multiplicar momentos memoráveis.</p>
+             </div>
+          <!-- end side-content --> 
+        </div>
+        <!-- end col-6 --> 
+      </div>
+      <!-- end row --> 
+    </div>
+    <!-- end container --> 
+  </section>
+  <!-- end content-section -->	
+
+  <section class="content-section">
+    <div class="swiper-container project-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <figure class="project-box"> 
+            <a href={foto1.src} data-fancybox="gallery">
+              <Image src={foto1} alt="Imagem" width="680" height="680" />
+            </a>          
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure class="project-box"> 
+            <a href={foto2.src}  data-fancybox="gallery">
+              <Image src={foto2} alt="Imagem" width="680" height="680"/>
+            </a>          
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure class="project-box"> 
+            <a href={foto3.src}  data-fancybox="gallery">
+              <Image src={foto3} alt="Imagem" width="680" height="680"/>
+            </a>          
+          </figure>
+        </div>
+        <!-- end swiper-slide --> 
+        <div class="swiper-slide">
+          <figure class="project-box"> 
+            <a href={foto4.src}  data-fancybox="gallery">
+              <Image src={foto4} alt="Imagem" width="680" height="680"/>
+            </a>          
+          </figure>
+        </div>
+        <!-- end swiper-slide --> 
+        <div class="swiper-slide">
+          <figure class="project-box"> 
+            <a href={foto5.src}  data-fancybox="gallery">
+              <Image src={foto5} alt="Imagem" width="680" height="680"/>
+            </a>          
+          </figure>
+        </div>
+        <!-- end swiper-slide --> 
+        <div class="swiper-slide">
+          <figure class="project-box"> 
+            <a href={foto6.src}  data-fancybox="gallery">
+              <Image src={foto6} alt="Imagem" width="680" height="680"/>
+            </a>          
+          </figure>
+        </div>
+        <!-- end swiper-slide --> 
+        <div class="swiper-slide">
+          <figure class="project-box"> 
+            <a href={foto7.src}  data-fancybox="gallery">
+              <Image src={foto7} alt="Imagem" width="680" height="680"/>
+            </a>          
+          </figure>
+        </div>
+        <!-- end swiper-slide --> 
+        <div class="swiper-slide">
+          <figure class="project-box"> 
+            <a href={foto8.src}  data-fancybox="gallery">
+              <Image src={foto8} alt="Imagem" width="680" height="680"/>
+            </a>          
+          </figure>
+        </div>
+        <!-- end swiper-slide --> 
+        <div class="swiper-slide">
+          <figure class="project-box"> 
+            <a href={foto9.src}  data-fancybox="gallery">
+              <Image src={foto9} alt="Imagem" width="680" height="680"/>
+            </a>          
+          </figure>
+        </div>
+        <!-- end swiper-slide --> 
+        <div class="swiper-slide">
+          <figure class="project-box"> 
+            <a href={foto10.src}  data-fancybox="gallery">
+              <Image src={foto10} alt="Imagem" width="680" height="680"/>
+            </a>          
+          </figure>
+        </div>
+        <!-- end swiper-slide --> 
+        <div class="swiper-slide">
+          <figure class="project-box"> 
+            <a href={foto11.src}  data-fancybox="gallery">
+              <Image  src={foto11} alt="Imagem" width="680" height="680"/>
+            </a>          
+          </figure>
+        </div>
+        <!-- end swiper-slide --> 
+        <div class="swiper-slide">
+          <figure class="project-box"> 
+            <a href={foto12.src}  data-fancybox="gallery">
+              <Image src={foto12} alt="Imagem" width="680" height="680"/>
+            </a>          
+          </figure>
+        </div>
+        <!-- end swiper-slide --> 
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- end project-slider --> 
+  </section>
+  <!-- end content-section -->
+
+
+  <section class="content-section no-spacing bg-full" data-background={`${bgSection.src}`}>
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-lg-6 col-md-9">
+          <div class="services-list-box">
+            <h4>O seu lote já vem com projeto</h4>
+            <p>Ganhe acesso a uma plataforma com dezenas de projetos de casas feitas especialmente para o loteamento e que se encaixam perfeitamente no seu lote. Depois, é só escolher a sua preferida sem nenhum custo adicional.</p>
+            <a href="https://tour.instacasa.com.br/natura-granja-viana/" class="button text-uppercase" target="_blank" title="Acesse o tour">
+              Acesse o tour
+            </a> 
+          </div>
+          <!-- end services-list-box --> 
+        </div>
+        <!-- end col-6 --> 
       </div>
       <!-- end row --> 
     </div>

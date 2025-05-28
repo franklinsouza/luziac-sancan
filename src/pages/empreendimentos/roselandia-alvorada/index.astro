@@ -4,6 +4,7 @@ import SingleHeader from "../../../components/layout/SingleHeader.astro";
 import Chamada from "../../../components/layout/Chamada.astro";
 import Image from "astro/components/Image.astro";
 
+import logo from '../../../assets/images/roselandia-alvorada/logo.webp';
 import foto1 from '../../../assets/images/roselandia-alvorada/image-1.webp';
 import foto2 from '../../../assets/images/roselandia-alvorada/image-2.webp';
 import foto3 from '../../../assets/images/roselandia-alvorada/image-3.webp';
@@ -16,13 +17,13 @@ import foto9 from '../../../assets/images/roselandia-alvorada/image-9.webp';
 import foto10 from '../../../assets/images/roselandia-alvorada/image-10.webp';
 ---
 
-<Layout title="Roselândia Alvorada">
-  <SingleHeader title={"Roselândia  Alvorada"} currentPath={"empreendimentos"}/>
+<Layout title="Roselândia Alvorada" pageClass="page-roselandia">
+  <SingleHeader title={"Roselândia  Alvorada"} currentPath={"empreendimentos"} logoPage={logo}/>
 
   <section class="content-section no-bottom-spacing">
     <div class="container">
       <div class="row">
-        <div class="col-lg-5 mb-5">
+        <div class="col-lg-5">
           <div class="section-title text-left mb-4">
               <h6 class="text-uppercase">Infraestrutura completa</h6>
               <h2>Onde a Natureza Encontra o Lazer</h2>
@@ -43,10 +44,60 @@ import foto10 from '../../../assets/images/roselandia-alvorada/image-10.webp';
           <b>LOCALIZAÇÂO PRIVILEGIADA</b>
         </div>
         <!-- end col-7 -->
-        <div class="col-lg-6 offset-lg-1">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/6_SqKsfMKHw?si=mdwcFbv_fwVdfDUP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="col-lg-5 offset-lg-2">
+          <ul class="custom-list">
+            <li><i class="lni lni-checkmark primary-color"></i> <p>Infraestrutura <span class="primary-color">completa</span></p></li>
+            <li><i class="lni lni-checkmark primary-color"></i> <p>Segurança e tranquilidade</p></li></span>
+            <li><i class="lni lni-checkmark primary-color"></i> <p>loteamento <span class="primary-color">fechado</span></p></li>
+            <li><i class="lni lni-checkmark primary-color"></i> <p>Pronto <span class="primary-color">para construir</span></p></li>
+          </ul>
         </div>
         <!-- end col-5 -->
+      </div>
+      <!-- end row --> 
+    </div>
+    <!-- end container --> 
+  </section>
+  <!-- end content-section -->
+
+  <section class="content-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title">
+              <h6 class="text-uppercase">Lotes a partir de 168m²</h6>
+              <h2>Terrenos cercados de <br />natureza e belas paisagens</h2>
+          </div>
+          <!-- end section-title --> 
+
+          <ul class="icons-list columns-3" style="max-width: 770px;">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M232,192H200V168h24a8,8,0,0,0,7.76-9.94l-32-128a8,8,0,0,0-15.52,0l-32,128A8,8,0,0,0,160,168h24v24H120V176h8a8,8,0,0,0,0-16h-8V144h8a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16h8v16H40a8,8,0,0,0,0,16h8v16H24a8,8,0,0,0,0,16H232a8,8,0,0,0,0-16ZM192,65l21.75,87h-43.5ZM64,144h40v16H64Zm0,32h40v16H64Zm52-80A28,28,0,1,0,88,68,28,28,0,0,0,116,96Zm0-40a12,12,0,1,1-12,12A12,12,0,0,1,116,56Z"></path></svg>
+              <span>Área de lazer completa</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path></svg>
+              <span>Exclusividade: poucos lotes</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"></path></svg>
+              <span>Modelo Sancan para morar bem</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"></path></svg>
+              <span>Loteamento 100% aprovado</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z"></path></svg>
+              <span>Portaria e controle de acesso 24h</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M208,40H48A16,16,0,0,0,32,56v56c0,52.72,25.52,84.67,46.93,102.19,23.06,18.86,46,25.26,47,25.53a8,8,0,0,0,4.2,0c1-.27,23.91-6.67,47-25.53C198.48,196.67,224,164.72,224,112V56A16,16,0,0,0,208,40Zm0,72c0,37.07-13.66,67.16-40.6,89.42A129.3,129.3,0,0,1,128,223.62a128.25,128.25,0,0,1-38.92-21.81C61.82,179.51,48,149.3,48,112l0-56,160,0ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z"></path></svg>
+              <span>Excelente infraestrutura</span>
+            </li>
+          </ul>
+        </div>
+        <!-- end col-12 -->
       </div>
       <!-- end row --> 
     </div>
@@ -142,51 +193,6 @@ import foto10 from '../../../assets/images/roselandia-alvorada/image-10.webp';
       <div class="swiper-pagination"></div>
     </div>
     <!-- end project-slider --> 
-  </section>
-  <!-- end content-section -->
-
-  <section class="content-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title">
-              <h6 class="text-uppercase">Lotes a partir de 168m²</h6>
-              <h2>Terrenos cercados de <br />natureza e belas paisagens</h2>
-          </div>
-          <!-- end section-title --> 
-
-          <ul class="icons-list columns-3" style="max-width: 770px;">
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M232,192H200V168h24a8,8,0,0,0,7.76-9.94l-32-128a8,8,0,0,0-15.52,0l-32,128A8,8,0,0,0,160,168h24v24H120V176h8a8,8,0,0,0,0-16h-8V144h8a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16h8v16H40a8,8,0,0,0,0,16h8v16H24a8,8,0,0,0,0,16H232a8,8,0,0,0,0-16ZM192,65l21.75,87h-43.5ZM64,144h40v16H64Zm0,32h40v16H64Zm52-80A28,28,0,1,0,88,68,28,28,0,0,0,116,96Zm0-40a12,12,0,1,1-12,12A12,12,0,0,1,116,56Z"></path></svg>
-              <span>Área de lazer completa</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path></svg>
-              <span>Exclusividade: poucos lotes</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"></path></svg>
-              <span>Modelo Sancan para morar bem</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"></path></svg>
-              <span>Loteamento 100% aprovado</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z"></path></svg>
-              <span>Portaria e controle de acesso 24h</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M208,40H48A16,16,0,0,0,32,56v56c0,52.72,25.52,84.67,46.93,102.19,23.06,18.86,46,25.26,47,25.53a8,8,0,0,0,4.2,0c1-.27,23.91-6.67,47-25.53C198.48,196.67,224,164.72,224,112V56A16,16,0,0,0,208,40Zm0,72c0,37.07-13.66,67.16-40.6,89.42A129.3,129.3,0,0,1,128,223.62a128.25,128.25,0,0,1-38.92-21.81C61.82,179.51,48,149.3,48,112l0-56,160,0ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z"></path></svg>
-              <span>Excelente infraestrutura</span>
-            </li>
-          </ul>
-        </div>
-        <!-- end col-12 -->
-      </div>
-      <!-- end row --> 
-    </div>
-    <!-- end container --> 
   </section>
   <!-- end content-section -->
 

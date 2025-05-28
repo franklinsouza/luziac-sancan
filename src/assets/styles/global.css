@@ -325,7 +325,7 @@ a:hover {
 
 .recent-news .list li {
   display: flex;
-  column-gap: 5px;
+  column-gap: 12px;
   align-items: center;
 }
 .recent-news .list li svg {
@@ -335,7 +335,7 @@ a:hover {
 .social-icons {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 7px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -1206,7 +1206,7 @@ a:hover {
   margin: 0;
   position: absolute;
   left: calc(50% - 80px);
-  top: 165px;
+  top: 105px;
   border-radius: 30px 0 0 30px;
 }
 .slider .slider-main .slide-image {
@@ -1326,6 +1326,29 @@ a:hover {
 }
 .page-header .container ul li a {
   color: #fff;
+}
+
+.page-header .logo-content {
+  position: absolute;
+  background-color: #fff;
+  width: 90%;
+  max-width: 340px;
+  height: 115px;
+  padding: 20px 30px;
+  border-radius: 13px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-header .logo-content img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 /* CONTENT SECTION */
@@ -2962,6 +2985,7 @@ a:hover {
 .recent-news figure {
   width: 100%;
   max-height: 220px;
+  height: 200px;
   display: block;
   margin: 0;
   position: relative;
@@ -2971,6 +2995,8 @@ a:hover {
 .recent-news figure img {
   width: 100%;
   max-width: inherit;
+  height: 100%;
+  object-fit: cover;
   /* min-height: 220px;
   filter: grayscale(1); */
 }
@@ -3243,7 +3269,7 @@ a:hover {
   color: #fff;
   background-color: #FF4919;
   background-image: url("/src/assets/images/bg-prefooter.png");
-  background-position: center;
+  background-position: center right;
   background-size: cover;
 }
 .footer-bar .logo {
@@ -3255,7 +3281,7 @@ a:hover {
   height: 50px;
 }
 .footer-bar h2 {
-  font-size: 52px;
+  font-size: 40px;
   padding-right: 20%;
   margin-bottom: 50px;
 }
@@ -3370,6 +3396,7 @@ a:hover {
   display: flex;
   align-items: center;
   column-gap: 7px;
+  line-height: 31px;
 }
 .footer address a {
   display: inline-block;
@@ -3610,6 +3637,182 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   border: 0;
 }
 
+/* Hub BR - Cor e logo */
+/* body.page-hub-br .page-header,
+body.page-hub-br .section-title h6:before,
+body.page-hub-br .navbar.sticky,
+body.page-hub-br .first-transition,
+body.page-hub-br .custom-list li:hover:before,
+body.page-hub-br .icons-list li:hover,
+body.page-hub-br .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: blue;
+}
+
+body.page-hub-br .primary-color,
+body.page-hub-br .navbar .navbar-button {
+  color: blue;
+}
+
+body.page-hub-br .content-section svg {
+  fill: blue;
+}
+
+body.page-hub-br .icons-list li:hover svg {
+  fill: #FFF;
+}
+body.page-natura-granja .page-header .logo-content {
+  border: 1px solid blue;
+} */
+/* Hub BR */
+
+/* Natura Granja - ok */
+body.page-natura-granja .page-header,
+body.page-natura-granja .section-title h6:before,
+body.page-natura-granja .navbar.sticky,
+body.page-natura-granja .first-transition,
+body.page-natura-granja .custom-list li:hover:before,
+body.page-natura-granja .icons-list li:hover,
+body.page-natura-granja .swiper-pagination .swiper-pagination-bullet-active,
+body.page-natura-granja .core-values-box h6:before,
+body.page-natura-granja .services-list-box .button {
+  background-color: #4C6842;
+}
+
+body.page-natura-granja .primary-color,
+body.page-natura-granja .navbar .navbar-button,
+body.page-natura-granja .percent-list li span:last-child {
+  color: #4C6842;
+}
+
+body.page-natura-granja .content-section svg {
+  fill: #4C6842;
+}
+
+body.page-natura-granja .icons-list li:hover svg {
+  fill: #FFF;
+}
+
+body.page-natura-granja .percent-list li .percentage {
+  background-color: #4C6842;
+  opacity: .3;
+}
+
+body.page-natura-granja .services-list-box .button:hover {
+  background-color: #5c7752;
+  color: #FFF;
+}
+
+body.page-natura-granja .page-header .logo-content {
+  border: 1px solid rgb(76 104 66 / 26%);
+}
+/* Natura Granja */
+
+/* Reserva falta logo*/
+body.page-reserva-caucaia .page-header,
+body.page-reserva-caucaia .section-title h6:before,
+body.page-reserva-caucaia .navbar.sticky,
+body.page-reserva-caucaia .first-transition,
+body.page-reserva-caucaia .custom-list li:hover:before,
+body.page-reserva-caucaia .icons-list li:hover,
+body.page-reserva-caucaia .swiper-pagination .swiper-pagination-bullet-active,
+body.page-reserva-caucaia .core-values-box h6:before,
+body.page-reserva-caucaia .services-list-box .button {
+  background-color: #55308B;
+}
+
+body.page-reserva-caucaia .primary-color,
+body.page-reserva-caucaia .navbar .navbar-button,
+body.page-reserva-caucaia .percent-list li span:last-child {
+  color: #55308B;
+}
+
+body.page-reserva-caucaia .content-section svg {
+  fill: #55308B;
+}
+
+body.page-reserva-caucaia .icons-list li:hover svg {
+  fill: #FFF;
+}
+body.page-reserva-caucaia .percent-list li .percentage {
+  background-color: #55308B;
+  opacity: .3;
+}
+body.page-reserva-caucaia .page-header .logo-content {
+  border: 1px solid #55308B;
+}
+/* Reserva*/
+
+/* Acqua ibiuna - ok */
+body.page-acqua-ibiuna .page-header,
+body.page-acqua-ibiuna .section-title h6:before,
+body.page-acqua-ibiuna .navbar.sticky,
+body.page-acqua-ibiuna .first-transition,
+body.page-acqua-ibiuna .custom-list li:hover:before,
+body.page-acqua-ibiuna .icons-list li:hover,
+body.page-acqua-ibiuna .swiper-pagination .swiper-pagination-bullet-active,
+body.page-acqua-ibiuna .core-values-box h6:before,
+body.page-acqua-ibiuna .services-list-box .button,
+body.page-acqua-ibiuna .project-slider .swiper-slide .project-box figcaption {
+  background-color: #40728E;
+}
+
+body.page-acqua-ibiuna .primary-color,
+body.page-acqua-ibiuna .navbar .navbar-button,
+body.page-acqua-ibiuna .percent-list li span:last-child {
+  color: #40728E;
+}
+
+body.page-acqua-ibiuna .content-section svg {
+  fill: #40728E;
+}
+
+body.page-acqua-ibiuna .icons-list li:hover svg {
+  fill: #FFF;
+}
+
+body.page-acqua-ibiuna .page-header .logo-content {
+  border: 1px solid #40728E;
+}
+/* Acqua ibiuna */
+
+/* Roselandia - ok */
+body.page-roselandia .page-header,
+body.page-roselandia .section-title h6:before,
+body.page-roselandia .navbar.sticky,
+body.page-roselandia .first-transition,
+body.page-roselandia .custom-list li:hover:before,
+body.page-roselandia .icons-list li:hover,
+body.page-roselandia .swiper-pagination .swiper-pagination-bullet-active,
+body.page-roselandia .core-values-box h6:before,
+body.page-roselandia .services-list-box .button,
+body.page-roselandia .project-slider .swiper-slide .project-box figcaption {
+  background-color: #F5834B;
+}
+
+body.page-roselandia .primary-color,
+body.page-roselandia .navbar .navbar-button {
+  color: #F5834B;
+}
+body.page-roselandia .percent-list li span:last-child {
+  color: #913608;
+}
+
+body.page-roselandia .content-section svg {
+  fill: #F5834B;
+}
+
+body.page-roselandia .icons-list li:hover svg {
+  fill: #FFF;
+}
+
+body.page-roselandia .page-header .logo-content {
+  border: 1px solid #FFF;
+  background-color: #f47b3e;
+}
+/* Roselandia */
+
+
+
 /* RESPONSIVE MEDIUM  */
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
   .navbar .navbar-button {
@@ -3647,6 +3850,12 @@ input::-moz-focus-inner, input::-moz-focus-outer {
 
   .footer-bar h2 {
     padding: 0;
+  }
+
+  .footer-bar {
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
   }
 }
 /* RESPONSIVE TABLET  */
@@ -3844,6 +4053,10 @@ input::-moz-focus-inner, input::-moz-focus-outer {
 
   .navbar .hamburger {
     display: inline-block;
+  }
+
+  .footer-bar {
+    background-image: none;
   }
 }
 /* RESPONSIVE MOBILE */
@@ -4070,4 +4283,10 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   .recent-news .content h3 {
     min-height: initial;
   }
+
+  .page-header .logo-content {
+    top: 50px;
+  }
 }
+
+
