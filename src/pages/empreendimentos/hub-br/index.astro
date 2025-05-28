@@ -4,6 +4,7 @@ import SingleHeader from "../../../components/layout/SingleHeader.astro";
 import Chamada from "../../../components/layout/Chamada.astro";
 import Image from "astro/components/Image.astro";
 
+import logo from '../../../assets/images/hub-br/logo.webp';
 import foto1 from '../../../assets/images/hub-br/image-1-885x660.webp';
 import foto2 from '../../../assets/images/hub-br/image-2-885x660.webp';
 import foto3 from '../../../assets/images/hub-br/image-3-885x660.webp';
@@ -25,7 +26,7 @@ import foto18 from '../../../assets/images/hub-br/image-18-885x660.webp';
 ---
 
 <Layout title="Hub BR" pageClass="page-hub-br">
-  <SingleHeader title={'Hub BR'} currentPath={"empreendimentos"}/>
+  <SingleHeader title={'Hub BR'} currentPath={"empreendimentos"} logoPage={logo}/>
 
   <section class="content-section">
     <div class="container">

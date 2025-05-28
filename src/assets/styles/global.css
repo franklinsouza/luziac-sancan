@@ -980,6 +980,9 @@ a:hover {
   display: block;
   padding: 0;
 }
+.navbar .site-menu ul li ul li a:hover {
+  text-decoration: none;
+}
 .navbar .site-menu ul li:hover ul {
   display: block;
 }
@@ -3637,32 +3640,36 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   border: 0;
 }
 
-/* Hub BR - Cor e logo */
-/* body.page-hub-br .page-header,
+/* Hub BR */
+body.page-hub-br .page-header,
 body.page-hub-br .section-title h6:before,
 body.page-hub-br .navbar.sticky,
 body.page-hub-br .first-transition,
 body.page-hub-br .custom-list li:hover:before,
 body.page-hub-br .icons-list li:hover,
-body.page-hub-br .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: blue;
+body.page-hub-br .swiper-pagination .swiper-pagination-bullet-active,
+body.page-hub-br .navbar .site-menu ul li ul {
+  background-color: #1B3B75;
 }
 
 body.page-hub-br .primary-color,
 body.page-hub-br .navbar .navbar-button {
-  color: blue;
+  color: #1B3B75;
 }
 
 body.page-hub-br .content-section svg {
-  fill: blue;
+  fill: #1B3B75;
 }
 
 body.page-hub-br .icons-list li:hover svg {
   fill: #FFF;
 }
-body.page-natura-granja .page-header .logo-content {
-  border: 1px solid blue;
-} */
+body.page-hub-br .page-header .logo-content {
+  border: 1px solid #1B3B75;
+}
+body.page-hub-br .navbar .site-menu ul li ul {
+  border: 1px solid #FFF;
+}
 /* Hub BR */
 
 /* Natura Granja - ok */
@@ -3674,7 +3681,8 @@ body.page-natura-granja .custom-list li:hover:before,
 body.page-natura-granja .icons-list li:hover,
 body.page-natura-granja .swiper-pagination .swiper-pagination-bullet-active,
 body.page-natura-granja .core-values-box h6:before,
-body.page-natura-granja .services-list-box .button {
+body.page-natura-granja .services-list-box .button,
+body.page-natura-granja .navbar .site-menu ul li ul {
   background-color: #4C6842;
 }
 
@@ -3705,6 +3713,10 @@ body.page-natura-granja .services-list-box .button:hover {
 body.page-natura-granja .page-header .logo-content {
   border: 1px solid rgb(76 104 66 / 26%);
 }
+
+body.page-natura-granja .navbar .site-menu ul li ul {
+  border: 1px solid #FFF;
+}
 /* Natura Granja */
 
 /* Reserva falta logo*/
@@ -3716,7 +3728,8 @@ body.page-reserva-caucaia .custom-list li:hover:before,
 body.page-reserva-caucaia .icons-list li:hover,
 body.page-reserva-caucaia .swiper-pagination .swiper-pagination-bullet-active,
 body.page-reserva-caucaia .core-values-box h6:before,
-body.page-reserva-caucaia .services-list-box .button {
+body.page-reserva-caucaia .services-list-box .button,
+body.page-reserva-caucaia .navbar .site-menu ul li ul {
   background-color: #55308B;
 }
 
@@ -3740,6 +3753,9 @@ body.page-reserva-caucaia .percent-list li .percentage {
 body.page-reserva-caucaia .page-header .logo-content {
   border: 1px solid #55308B;
 }
+body.page-reserva-caucaia .navbar .site-menu ul li ul {
+  border: 1px solid #FFF;
+}
 /* Reserva*/
 
 /* Acqua ibiuna - ok */
@@ -3752,7 +3768,8 @@ body.page-acqua-ibiuna .icons-list li:hover,
 body.page-acqua-ibiuna .swiper-pagination .swiper-pagination-bullet-active,
 body.page-acqua-ibiuna .core-values-box h6:before,
 body.page-acqua-ibiuna .services-list-box .button,
-body.page-acqua-ibiuna .project-slider .swiper-slide .project-box figcaption {
+body.page-acqua-ibiuna .project-slider .swiper-slide .project-box figcaption,
+body.page-acqua-ibiuna .navbar .site-menu ul li ul {
   background-color: #40728E;
 }
 
@@ -3773,6 +3790,9 @@ body.page-acqua-ibiuna .icons-list li:hover svg {
 body.page-acqua-ibiuna .page-header .logo-content {
   border: 1px solid #40728E;
 }
+body.page-acqua-ibiuna .navbar .site-menu ul li ul {
+  border: 1px solid #FFF;
+}
 /* Acqua ibiuna */
 
 /* Roselandia - ok */
@@ -3785,7 +3805,8 @@ body.page-roselandia .icons-list li:hover,
 body.page-roselandia .swiper-pagination .swiper-pagination-bullet-active,
 body.page-roselandia .core-values-box h6:before,
 body.page-roselandia .services-list-box .button,
-body.page-roselandia .project-slider .swiper-slide .project-box figcaption {
+body.page-roselandia .project-slider .swiper-slide .project-box figcaption,
+body.page-roselandia .navbar .site-menu ul li ul {
   background-color: #F5834B;
 }
 
@@ -3808,6 +3829,9 @@ body.page-roselandia .icons-list li:hover svg {
 body.page-roselandia .page-header .logo-content {
   border: 1px solid #FFF;
   background-color: #f47b3e;
+}
+body.page-roselandia .navbar .site-menu ul li ul {
+  border: 1px solid #FFF;
 }
 /* Roselandia */
 
