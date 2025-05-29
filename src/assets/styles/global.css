@@ -335,7 +335,7 @@ a:hover {
 .social-icons {
   display: flex;
   flex-direction: column;
-  row-gap: 7px;
+  row-gap: 14px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -3399,7 +3399,8 @@ a:hover {
   display: flex;
   align-items: center;
   column-gap: 7px;
-  line-height: 31px;
+  line-height: 36px;
+  margin-bottom: 0px;
 }
 .footer address a {
   display: inline-block;
