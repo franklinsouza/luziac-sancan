@@ -3648,7 +3648,8 @@ body.page-hub-br .first-transition,
 body.page-hub-br .custom-list li:hover:before,
 body.page-hub-br .icons-list li:hover,
 body.page-hub-br .swiper-pagination .swiper-pagination-bullet-active,
-body.page-hub-br .navbar .site-menu ul li ul {
+body.page-hub-br .navbar .site-menu ul li ul,
+body.page-hub-br .side-widget {
   background-color: #1B3B75;
 }
 
@@ -3682,7 +3683,8 @@ body.page-natura-granja .icons-list li:hover,
 body.page-natura-granja .swiper-pagination .swiper-pagination-bullet-active,
 body.page-natura-granja .core-values-box h6:before,
 body.page-natura-granja .services-list-box .button,
-body.page-natura-granja .navbar .site-menu ul li ul {
+body.page-natura-granja .navbar .site-menu ul li ul,
+body.page-natura-granja .side-widget  {
   background-color: #4C6842;
 }
 
@@ -3729,7 +3731,8 @@ body.page-reserva-caucaia .icons-list li:hover,
 body.page-reserva-caucaia .swiper-pagination .swiper-pagination-bullet-active,
 body.page-reserva-caucaia .core-values-box h6:before,
 body.page-reserva-caucaia .services-list-box .button,
-body.page-reserva-caucaia .navbar .site-menu ul li ul {
+body.page-reserva-caucaia .navbar .site-menu ul li ul,
+body.page-reserva-caucaia .side-widget  {
   background-color: #55308B;
 }
 
@@ -3769,7 +3772,8 @@ body.page-acqua-ibiuna .swiper-pagination .swiper-pagination-bullet-active,
 body.page-acqua-ibiuna .core-values-box h6:before,
 body.page-acqua-ibiuna .services-list-box .button,
 body.page-acqua-ibiuna .project-slider .swiper-slide .project-box figcaption,
-body.page-acqua-ibiuna .navbar .site-menu ul li ul {
+body.page-acqua-ibiuna .navbar .site-menu ul li ul,
+body.page-acqua-ibiuna .side-widget {
   background-color: #40728E;
 }
 
@@ -3806,7 +3810,8 @@ body.page-roselandia .swiper-pagination .swiper-pagination-bullet-active,
 body.page-roselandia .core-values-box h6:before,
 body.page-roselandia .services-list-box .button,
 body.page-roselandia .project-slider .swiper-slide .project-box figcaption,
-body.page-roselandia .navbar .site-menu ul li ul {
+body.page-roselandia .navbar .site-menu ul li ul,
+body.page-roselandia .side-widget {
   background-color: #F5834B;
 }
 
