@@ -1,16 +1,13 @@
 import { Resend } from 'resend';
 
-
 export const POST = async ({ request }) => {
     if (request.headers.get("Content-Type") === "application/json") {
         const resend = new Resend(import.meta.env.RESEND_API_KEY);
         const body = await request.json();
 
-
-
         const { data, error } = await resend.emails.send({
             from: 'onboarding@resend.dev', //contato@sancan.com.br
-            to: 'frankrsouza@gmail.com',
+            to: 'frankrsouza@gmail.com', //contato@sancan.com.br
             subject:  body.subject ? body.subject : 'Formulário de contato',
             html: `<strong>Nome: </strong>${body.nome} ${body.sobrenome ? body.sobrenome : ''}<br />
                    <strong>Email: </strong>${body.email}<br />

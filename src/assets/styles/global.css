@@ -1757,7 +1757,7 @@ a:hover {
   background: #fff;
   position: relative;
   z-index: 1;
-  margin-bottom: -70%;
+  margin-bottom: 50px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 .contact-form input[type=text], 
@@ -3671,7 +3671,7 @@ body.page-hub-br .icons-list li:hover,
 body.page-hub-br .swiper-pagination .swiper-pagination-bullet-active,
 body.page-hub-br .navbar .site-menu ul li ul,
 body.page-hub-br .side-widget,
-body.page-hub-br  button[type="button"]  {
+body.page-hub-br  button[type="submit"]  {
   background-color: #1B3B75;
 }
 
@@ -3707,7 +3707,7 @@ body.page-natura-granja .core-values-box h6:before,
 body.page-natura-granja .services-list-box .button,
 body.page-natura-granja .navbar .site-menu ul li ul,
 body.page-natura-granja .side-widget,
-body.page-natura-granja  button[type="button"]  {
+body.page-natura-granja  button[type="submit"]  {
   background-color: #4C6842;
 }
 
@@ -3756,7 +3756,7 @@ body.page-reserva-caucaia .core-values-box h6:before,
 body.page-reserva-caucaia .services-list-box .button,
 body.page-reserva-caucaia .navbar .site-menu ul li ul,
 body.page-reserva-caucaia .side-widget,
-body.page-reserva-caucaia  button[type="button"] {
+body.page-reserva-caucaia  button[type="submit"] {
   background-color: #55308B;
 }
 
@@ -3798,7 +3798,7 @@ body.page-acqua-ibiuna .services-list-box .button,
 body.page-acqua-ibiuna .project-slider .swiper-slide .project-box figcaption,
 body.page-acqua-ibiuna .navbar .site-menu ul li ul,
 body.page-acqua-ibiuna .side-widget,
-body.page-acqua-ibiuna button[type="button"]  {
+body.page-acqua-ibiuna button[type="submit"]  {
   background-color: #40728E;
 }
 
@@ -3837,7 +3837,7 @@ body.page-roselandia .services-list-box .button,
 body.page-roselandia .project-slider .swiper-slide .project-box figcaption,
 body.page-roselandia .navbar .site-menu ul li ul,
 body.page-roselandia .side-widget,
-body.page-roselandia button[type="button"]  {
+body.page-roselandia button[type="submit"]  {
   background-color: #F5834B;
 }
 
@@ -3933,10 +3933,6 @@ body.page-roselandia .navbar .site-menu ul li ul {
 
   .contact-box p {
     font-size: 18px;
-  }
-
-  .contact-form {
-    margin-bottom: -10%;
   }
 
   .counter-box .value {
