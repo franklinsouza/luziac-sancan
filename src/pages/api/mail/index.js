@@ -1,9 +1,9 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(import.meta.env.RESEND_API_KEY);
 
 export const POST = async ({ request }) => {
     if (request.headers.get("Content-Type") === "application/json") {
+        const resend = new Resend(import.meta.env.RESEND_API_KEY);
         const body = await request.json();
 
 
