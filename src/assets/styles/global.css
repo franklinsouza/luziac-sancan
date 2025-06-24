@@ -132,6 +132,22 @@ figure {
 }
 
 /* FORM ELEMENTS */
+.form-msg {
+  text-align: center;
+  padding: 10px 10px;
+  color: #fff;
+}
+
+.form-msg.success {
+  background-color: #2f842f;
+}
+
+.form-msg.error {
+  background-color: #d03434;
+}
+
+
+
 input[type=text], input[type=email], input[type=search], input[type=password] {
   width: 420px;
   max-width: 100%;
@@ -144,11 +160,15 @@ input[type=submit], input[type=button], button[type=button], button[type=submit]
   height: 68px;
   border: none;
   background: #FF4919;
-  color: #3B3129;
+  color: #FFF;
   font-weight: 800;
   font-size: 13px;
   padding: 0 50px;
   letter-spacing: 1px;
+}
+button[type=submit] {
+  margin: 0 auto;
+  display: block;
 }
 
 textarea {
@@ -3650,7 +3670,8 @@ body.page-hub-br .custom-list li:hover:before,
 body.page-hub-br .icons-list li:hover,
 body.page-hub-br .swiper-pagination .swiper-pagination-bullet-active,
 body.page-hub-br .navbar .site-menu ul li ul,
-body.page-hub-br .side-widget {
+body.page-hub-br .side-widget,
+body.page-hub-br  button[type="button"]  {
   background-color: #1B3B75;
 }
 
@@ -3685,7 +3706,8 @@ body.page-natura-granja .swiper-pagination .swiper-pagination-bullet-active,
 body.page-natura-granja .core-values-box h6:before,
 body.page-natura-granja .services-list-box .button,
 body.page-natura-granja .navbar .site-menu ul li ul,
-body.page-natura-granja .side-widget  {
+body.page-natura-granja .side-widget,
+body.page-natura-granja  button[type="button"]  {
   background-color: #4C6842;
 }
 
@@ -3733,7 +3755,8 @@ body.page-reserva-caucaia .swiper-pagination .swiper-pagination-bullet-active,
 body.page-reserva-caucaia .core-values-box h6:before,
 body.page-reserva-caucaia .services-list-box .button,
 body.page-reserva-caucaia .navbar .site-menu ul li ul,
-body.page-reserva-caucaia .side-widget  {
+body.page-reserva-caucaia .side-widget,
+body.page-reserva-caucaia  button[type="button"] {
   background-color: #55308B;
 }
 
@@ -3774,7 +3797,8 @@ body.page-acqua-ibiuna .core-values-box h6:before,
 body.page-acqua-ibiuna .services-list-box .button,
 body.page-acqua-ibiuna .project-slider .swiper-slide .project-box figcaption,
 body.page-acqua-ibiuna .navbar .site-menu ul li ul,
-body.page-acqua-ibiuna .side-widget {
+body.page-acqua-ibiuna .side-widget,
+body.page-acqua-ibiuna button[type="button"]  {
   background-color: #40728E;
 }
 
@@ -3812,7 +3836,8 @@ body.page-roselandia .core-values-box h6:before,
 body.page-roselandia .services-list-box .button,
 body.page-roselandia .project-slider .swiper-slide .project-box figcaption,
 body.page-roselandia .navbar .site-menu ul li ul,
-body.page-roselandia .side-widget {
+body.page-roselandia .side-widget,
+body.page-roselandia button[type="button"]  {
   background-color: #F5834B;
 }
 

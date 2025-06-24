@@ -23,6 +23,7 @@ import foto15 from '../../../assets/images/hub-br/image-15-885x660.webp';
 import foto16 from '../../../assets/images/hub-br/image-16-885x660.webp';
 import foto17 from '../../../assets/images/hub-br/image-17-885x660.webp';
 import foto18 from '../../../assets/images/hub-br/image-18-885x660.webp';
+import Contato from "../../../components/layout/Contato.astro";
 ---
 
 <Layout title="Hub BR" pageClass="page-hub-br">
@@ -32,7 +33,7 @@ import foto18 from '../../../assets/images/hub-br/image-18-885x660.webp';
     <div class="container">
       <div class="row">
       <div class="col-lg-5">
-         <div class="section-title text-left mb-4">
+         <div class="mb-4 text-left section-title">
             <h6 class="text-uppercase">Complexo empresarial fechado</h6>
             <h2>Moderno e muito bem localizado</h2>
         </div>
@@ -85,7 +86,7 @@ import foto18 from '../../../assets/images/hub-br/image-18-885x660.webp';
         </div>
         <!-- end col-12 -->
 
-        <ul class="icons-list columns-3" style="max-width: 700px;">
+        <ul class="columns-3 icons-list" style="max-width: 700px;">
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M224,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48Zm0,112h-8a32,32,0,0,1,0-64h8ZM32,96h8a32,32,0,0,1,0,64H32Zm0,80h8a48,48,0,0,0,0-96H32V64h88V192H32Zm192,16H136V64h88V80h-8a48,48,0,0,0,0,96h8v16Z"></path></svg>
             <span>Quadra de futebol</span>
@@ -336,9 +337,9 @@ import foto18 from '../../../assets/images/hub-br/image-18-885x660.webp';
   </section>
   <!-- end content-section -->
 
-  <section class="content-section no-spacing bg-full" data-background={`${foto1.src}`}>
+  <section class="bg-full content-section no-spacing" data-background={`${foto1.src}`}>
     <div class="container">
-      <div class="row justify-content-end">
+      <div class="justify-content-end row">
         <div class="col-lg-6 col-md-9">
           <div class="services-list-box">
             <h4 class="mb-5">A região</h4>
@@ -361,7 +362,7 @@ import foto18 from '../../../assets/images/hub-br/image-18-885x660.webp';
   </section>
   <!-- end content-section -->
 
-  <section class="content-section no-bottom-spacing">
+  <section class="no-bottom-spacing content-section">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
@@ -384,5 +385,9 @@ import foto18 from '../../../assets/images/hub-br/image-18-885x660.webp';
     </div>
   </section>
 
+  <!-- [ ] Falta ID Empreendimento Hub BR
+   --> 
+  <Contato idempreendimento={0}/>
+  
   <Chamada />
 </Layout>

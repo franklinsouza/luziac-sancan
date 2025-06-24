@@ -2,7 +2,6 @@
   $(document).ready(function () {
     "use strict";
 
-
     // BACK BUTTON RELOAD
     window.onpageshow = function (event) {
       if (event.persisted) {
@@ -374,6 +373,7 @@
 
     lastScrollTop = st;
   };
+
 
   // FORM CALCULATOR
   $(".form").change(function () {

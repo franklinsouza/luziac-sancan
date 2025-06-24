@@ -3,6 +3,7 @@ import Image from "astro/components/Image.astro";
 import Layout from "../../../layouts/Layout.astro";
 import SingleHeader from "../../../components/layout/SingleHeader.astro";
 import Chamada from "../../../components/layout/Chamada.astro";
+import Contato from '../../../components/layout/Contato.astro';
 
 import logo from '../../../assets/images/natura-granja-viana/logo.png';
 import bgSection from '../../../assets/images/natura-granja-viana/bg-section-tour.webp';
@@ -23,11 +24,11 @@ import foto12 from '../../../assets/images/natura-granja-viana/12-1500x1500.webp
 <Layout title="Natura Granja Viana" pageClass="page-natura-granja">
   <SingleHeader title={'Natura Granja Viana'} currentPath={"empreendimentos"} logoPage={logo}/>
 
-  <section class="content-section no-bottom-spacing">
+  <section class="no-bottom-spacing content-section">
     <div class="container">
       <div class="row">
       <div class="col-lg-5">
-        <div class="section-title text-left mb-4">
+        <div class="mb-4 text-left section-title">
           <h6>VIVA MOMENTOS INESQUECÍVEIS</h6>
           <h2>Natureza e praticidade ao seu alcance.</h2>
         </div>
@@ -121,7 +122,7 @@ import foto12 from '../../../assets/images/natura-granja-viana/12-1500x1500.webp
 
         <div class="col-md-12 col-lg-6">
           <h3>Portaria:</h3>
-          <ul class="icons-list columns-3 mb-5">
+          <ul class="columns-3 mb-5 icons-list">
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M240,184h-8V57.9l9.67-2.08a8,8,0,1,0-3.35-15.64l-224,48A8,8,0,0,0,16,104a8.16,8.16,0,0,0,1.69-.18L24,102.47V184H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM40,99,216,61.33V184H192V128a8,8,0,0,0-8-8H72a8,8,0,0,0-8,8v56H40Zm136,53H80V136h96ZM80,168h96v16H80Z"></path></svg>
               <span>Sede administrativa com copa, sala de reunião e vestiários</span>
@@ -138,7 +139,7 @@ import foto12 from '../../../assets/images/natura-granja-viana/12-1500x1500.webp
         </div>
         <div class="col-md-12 col-lg-6">
           <h3>Espaço Kids:</h3>
-          <ul class="icons-list columns-3 mb-5">
+          <ul class="columns-3 mb-5 icons-list">
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M92,140a12,12,0,1,1,12-12A12,12,0,0,1,92,140Zm72-24a12,12,0,1,0,12,12A12,12,0,0,0,164,116Zm-12.27,45.23a45,45,0,0,1-47.46,0,8,8,0,0,0-8.54,13.54,61,61,0,0,0,64.54,0,8,8,0,0,0-8.54-13.54ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88.11,88.11,0,0,0-84.09-87.91C120.32,56.38,120,71.88,120,72a8,8,0,0,0,16,0,8,8,0,0,1,16,0,24,24,0,0,1-48,0c0-.73.13-14.3,8.46-30.63A88,88,0,1,0,216,128Z"></path></svg>
               <span>Playground</span>
@@ -163,7 +164,7 @@ import foto12 from '../../../assets/images/natura-granja-viana/12-1500x1500.webp
         </div>
         <div class="col-md-12 col-lg-6">
           <h3>Praça de Eventos:</h3>
-          <ul class="icons-list columns-3 mb-5">
+          <ul class="columns-3 mb-5 icons-list">
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,176H48V48H72v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V208Zm-31.38-94.36-29.84-2.31-11.43-26.5a8,8,0,0,0-14.7,0l-11.43,26.5-29.84,2.31a8,8,0,0,0-4.47,14.14l22.52,18.59-6.86,27.71a8,8,0,0,0,11.82,8.81L128,167.82l25.61,15.07a8,8,0,0,0,11.82-8.81l-6.86-27.71,22.52-18.59a8,8,0,0,0-4.47-14.14Zm-32.11,23.6a8,8,0,0,0-2.68,8.09l3.5,14.12-13.27-7.81a8,8,0,0,0-8.12,0l-13.27,7.81,3.5-14.12a8,8,0,0,0-2.68-8.09l-11.11-9.18,14.89-1.15a8,8,0,0,0,6.73-4.8l6-13.92,6,13.92a8,8,0,0,0,6.73,4.8l14.89,1.15Z"></path></svg>
               <span>Espaço para eventos</span>
@@ -196,7 +197,7 @@ import foto12 from '../../../assets/images/natura-granja-viana/12-1500x1500.webp
         </div>
         <div class="col-md-12 col-lg-6">
           <h3>Club House:</h3>
-          <ul class="icons-list columns-3 mb-5">
+          <ul class="columns-3 mb-5 icons-list">
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M72,88V40a8,8,0,0,1,16,0V88a8,8,0,0,1-16,0ZM216,40V224a8,8,0,0,1-16,0V176H152a8,8,0,0,1-8-8,268.75,268.75,0,0,1,7.22-56.88c9.78-40.49,28.32-67.63,53.63-78.47A8,8,0,0,1,216,40ZM200,53.9c-32.17,24.57-38.47,84.42-39.7,106.1H200ZM119.89,38.69a8,8,0,1,0-15.78,2.63L112,88.63a32,32,0,0,1-64,0l7.88-47.31a8,8,0,1,0-15.78-2.63l-8,48A8.17,8.17,0,0,0,32,88a48.07,48.07,0,0,0,40,47.32V224a8,8,0,0,0,16,0V135.32A48.07,48.07,0,0,0,128,88a8.17,8.17,0,0,0-.11-1.31Z"></path></svg>
               <span>Churrasqueira</span>
@@ -233,7 +234,7 @@ import foto12 from '../../../assets/images/natura-granja-viana/12-1500x1500.webp
         </div>
         <div class="col-12">
           <h3>Parque Linear:</h3>
-          <ul class="icons-list columns-4">
+          <ul class="columns-4 icons-list">
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M239.54,63a15.91,15.91,0,0,0-7.25-9.9,201.49,201.49,0,0,0-208.58,0,16,16,0,0,0-5.37,22l96,157.27a16,16,0,0,0,27.36,0l96-157.27A15.82,15.82,0,0,0,239.54,63ZM63.59,118.5a24,24,0,1,1,24.47,40.09Zm87.92,66.95A24,24,0,0,1,176,145.37Zm32.93-53.93a40,40,0,0,0-41.38,67.77L128,224,96.5,172.43a40,40,0,1,0-41.35-67.76L48.8,94.26a152,152,0,0,1,158.39,0Zm31.1-50.93a168.12,168.12,0,0,0-175.08,0L32,66.77a185.6,185.6,0,0,1,192,0Z"></path></svg>
               <span>Churrasqueria com forno de pizza</span>
@@ -405,7 +406,7 @@ import foto12 from '../../../assets/images/natura-granja-viana/12-1500x1500.webp
 
     <section class="content-section">
     <div class="container">
-      <div class="row align-items-center">
+      <div class="align-items-center row">
         <div class="col-lg-6">
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/0RBi-JS8_bc?si=83HrZlUaFOiDIrqm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <!-- end side-image --> 
@@ -534,14 +535,14 @@ import foto12 from '../../../assets/images/natura-granja-viana/12-1500x1500.webp
   <!-- end content-section -->
 
 
-  <section class="content-section no-spacing bg-full" data-background={`${bgSection.src}`}>
+  <section class="bg-full content-section no-spacing" data-background={`${bgSection.src}`}>
     <div class="container">
-      <div class="row justify-content-end">
+      <div class="justify-content-end row">
         <div class="col-lg-6 col-md-9">
           <div class="services-list-box">
             <h4>O seu lote já vem com projeto</h4>
             <p>Ganhe acesso a uma plataforma com dezenas de projetos de casas feitas especialmente para o loteamento e que se encaixam perfeitamente no seu lote. Depois, é só escolher a sua preferida sem nenhum custo adicional.</p>
-            <a href="https://tour.instacasa.com.br/natura-granja-viana/" class="button text-uppercase" target="_blank" title="Acesse o tour">
+            <a href="https://tour.instacasa.com.br/natura-granja-viana/" class="text-uppercase button" target="_blank" title="Acesse o tour">
               Acesse o tour
             </a> 
           </div>
@@ -566,7 +567,7 @@ import foto12 from '../../../assets/images/natura-granja-viana/12-1500x1500.webp
         </div>
         <!-- end col-12 -->
         <div class="col-12">
-          <ul class="percent-list columns-2">
+          <ul class="columns-2 percent-list">
             <li>
               <div class="percentage" style="width: 80%;"></div>
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M240,165.41V134a15.89,15.89,0,0,0-11.4-15.32l-.21-.06L192,108.71V72a8,8,0,0,0-16,0v32.38l-24-6.5V56h8a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16h8V88H40a8,8,0,0,0,0,16H68a68.07,68.07,0,0,1,68,68v12a8,8,0,0,0,8,8h32.23A36,36,0,1,0,240,165.41ZM68,88H64V56h72v66.77A83.92,83.92,0,0,0,68,88Zm84,26.45L224,134v20.1A36,36,0,0,0,178.06,176H152ZM212,208a20,20,0,1,1,20-20A20,20,0,0,1,212,208ZM68,120a52,52,0,1,0,52,52A52.06,52.06,0,0,0,68,120Zm0,88a36,36,0,1,1,36-36A36,36,0,0,1,68,208Zm12-36a12,12,0,1,1-12-12A12,12,0,0,1,80,172Z"></path></svg>
@@ -622,7 +623,7 @@ import foto12 from '../../../assets/images/natura-granja-viana/12-1500x1500.webp
     </div>
   </section>
 
-  <section class="content-section no-bottom-spacing">
+  <section class="no-bottom-spacing content-section">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
@@ -644,6 +645,8 @@ import foto12 from '../../../assets/images/natura-granja-viana/12-1500x1500.webp
       </div>
     </div>
   </section>
+
+  <Contato idempreendimento={5} />
 
   <Chamada />
 </Layout>

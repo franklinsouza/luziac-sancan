@@ -1,18 +1,21 @@
 <div id="sales-specialist-form">
-  <form method="POST" onsubmit="event => event.preventDefault();return false">
-    <input type="hidden" id="type" value="modal">
+  <form>
+    <input type="hidden" name="send" value="mail" />
     <div class="form-group"> <span>Nome *</span>
-      <input type="text" name="name" id="name" required>
+      <input type="text" name="nome" id="name">
     </div>
     <div class="form-group"> <span>Sobrenome *</span>
-      <input type="text" name="sobrenome" id="sobrenome" required>
+      <input type="text" name="sobrenome" id="sobrenome">
     </div>
     <div class="form-group"> <span>Seu melhor E-mail *</span>
-      <input type="email" name="email" id="email" required>
+      <input type="email" name="email" id="email">
     </div>
     <div class="form-group">
-      <button type="button" class="send" data-type="modal">ENVIAR</button>
+      <button type="submit" data-type="modal">ENVIAR</button>
       <div class="form-group status"></div> 
+    </div>
+    <div class="form-group">
+      <div class="form-msg"></div>
     </div>
   </form>
 </div>

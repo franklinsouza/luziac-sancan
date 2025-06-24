@@ -15,16 +15,17 @@ import foto7 from '../../../assets/images/roselandia-alvorada/image-7.webp';
 import foto8 from '../../../assets/images/roselandia-alvorada/image-8.webp';
 import foto9 from '../../../assets/images/roselandia-alvorada/image-9.webp';
 import foto10 from '../../../assets/images/roselandia-alvorada/image-10.webp';
+import Contato from "../../../components/layout/Contato.astro";
 ---
 
 <Layout title="Roselândia Alvorada" pageClass="page-roselandia">
   <SingleHeader title={"Roselândia  Alvorada"} currentPath={"empreendimentos"} logoPage={logo}/>
 
-  <section class="content-section no-bottom-spacing">
+  <section class="no-bottom-spacing content-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-5">
-          <div class="section-title text-left mb-4">
+          <div class="mb-4 text-left section-title">
               <h6 class="text-uppercase">Infraestrutura completa</h6>
               <h2>Onde a Natureza Encontra o Lazer</h2>
           </div>
@@ -70,7 +71,7 @@ import foto10 from '../../../assets/images/roselandia-alvorada/image-10.webp';
           </div>
           <!-- end section-title --> 
 
-          <ul class="icons-list columns-3" style="max-width: 770px;">
+          <ul class="columns-3 icons-list" style="max-width: 770px;">
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M232,192H200V168h24a8,8,0,0,0,7.76-9.94l-32-128a8,8,0,0,0-15.52,0l-32,128A8,8,0,0,0,160,168h24v24H120V176h8a8,8,0,0,0,0-16h-8V144h8a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16h8v16H40a8,8,0,0,0,0,16h8v16H24a8,8,0,0,0,0,16H232a8,8,0,0,0,0-16ZM192,65l21.75,87h-43.5ZM64,144h40v16H64Zm0,32h40v16H64Zm52-80A28,28,0,1,0,88,68,28,28,0,0,0,116,96Zm0-40a12,12,0,1,1-12,12A12,12,0,0,1,116,56Z"></path></svg>
               <span>Área de lazer completa</span>
@@ -105,7 +106,7 @@ import foto10 from '../../../assets/images/roselandia-alvorada/image-10.webp';
   </section>
   <!-- end content-section -->
 
-  <section class="content-section no-bottom-spacing">
+  <section class="no-bottom-spacing content-section">
     <div class="swiper-container project-slider">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -207,7 +208,7 @@ import foto10 from '../../../assets/images/roselandia-alvorada/image-10.webp';
         </div>
         <!-- end col-12 -->
         <div class="col-12">
-          <ul class="percent-list columns-2">
+          <ul class="columns-2 percent-list">
             <li>
               <div class="percentage" style="width: 100%;"></div>
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4919" viewBox="0 0 256 256"><path d="M240,165.41V134a15.89,15.89,0,0,0-11.4-15.32l-.21-.06L192,108.71V72a8,8,0,0,0-16,0v32.38l-24-6.5V56h8a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16h8V88H40a8,8,0,0,0,0,16H68a68.07,68.07,0,0,1,68,68v12a8,8,0,0,0,8,8h32.23A36,36,0,1,0,240,165.41ZM68,88H64V56h72v66.77A83.92,83.92,0,0,0,68,88Zm84,26.45L224,134v20.1A36,36,0,0,0,178.06,176H152ZM212,208a20,20,0,1,1,20-20A20,20,0,0,1,212,208ZM68,120a52,52,0,1,0,52,52A52.06,52.06,0,0,0,68,120Zm0,88a36,36,0,1,1,36-36A36,36,0,0,1,68,208Zm12-36a12,12,0,1,1-12-12A12,12,0,0,1,80,172Z"></path></svg>
@@ -263,7 +264,7 @@ import foto10 from '../../../assets/images/roselandia-alvorada/image-10.webp';
     </div>
   </section>   
 
-  <section class="content-section no-bottom-spacing">
+  <section class="no-bottom-spacing content-section">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
@@ -287,5 +288,7 @@ import foto10 from '../../../assets/images/roselandia-alvorada/image-10.webp';
     </div>
   </section>
 
+  <Contato idempreendimento={4}/>
+  
   <Chamada />
 </Layout>
