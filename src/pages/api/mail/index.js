@@ -7,7 +7,7 @@ export const POST = async ({ request }) => {
 
         const { data, error } = await resend.emails.send({
             from: 'onboarding@resend.dev', //contato@sancan.com.br
-            to: 'contato@sancan.com.br', //contato@sancan.com.br
+            to: 'pedro@luziac.com.br', //contato@sancan.com.br
             subject:  body.subject ? body.subject : 'Formulário de contato',
             html: `<strong>Nome: </strong>${body.nome} ${body.sobrenome ? body.sobrenome : ''}<br />
                    <strong>Email: </strong>${body.email}<br />
@@ -16,12 +16,22 @@ export const POST = async ({ request }) => {
         });
 
         if (error) {
-            return console.log(error);
+            //return console.log(error);
+            return new Response(
+                JSON.stringify({
+                    success: false,
+                    msg: error
+                }),
+                {
+                    status: 500,
+                },
+            );
         }
 
         return new Response(
             JSON.stringify({
-                success: true
+                success: true,
+                msg: data
             }),
             {
                 status: 200,
