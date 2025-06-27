@@ -6,8 +6,8 @@ export const POST = async ({ request }) => {
         const body = await request.json();
 
         const { data, error } = await resend.emails.send({
-            from: 'contato@sancan.com.br',
-            to: 'frankrsouza@gmail.com',
+            from: 'onboarding@resend.dev', //contato@sancan.com.br
+            to: 'contato@sancan.com.br', //contato@sancan.com.br
             subject:  body.subject ? body.subject : 'Formulário de contato',
             html: `<strong>Nome: </strong>${body.nome} ${body.sobrenome ? body.sobrenome : ''}<br />
                    <strong>Email: </strong>${body.email}<br />
