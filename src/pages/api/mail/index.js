@@ -11,6 +11,7 @@ export const POST = async ({ request }) => {
             subject:  body.subject ? body.subject : 'Formulário de contato',
             html: `<strong>Nome: </strong>${body.nome} ${body.sobrenome ? body.sobrenome : ''}<br />
                    <strong>Email: </strong>${body.email}<br />
+                   ${body.telefone ? `<strong>Whatsapp: </strong>${body.telefone}<br />`: ''}
                    ${body.msg ? `<strong>Mensagem: </strong>${body.msg}<br />` : ''}`
         });
 

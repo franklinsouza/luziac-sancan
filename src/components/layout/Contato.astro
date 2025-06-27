@@ -1,5 +1,5 @@
 ---
-  const  { idempreendimento } = Astro.props;
+  const  { idempreendimento, sendTo, subject } = Astro.props;
 ---  
 <section class="content-section">
   <div class="container">
@@ -14,8 +14,9 @@
       <!-- end col-6 -->
       <div class="col-lg-7">
         <form class="mb-0 contact-form">
-          <input type="hidden" name="idempreendimento" value={idempreendimento} />
-          <input type="hidden" name="send" value="crm" />
+          <input type="hidden" name="send" value={sendTo} />
+          {idempreendimento && <input type="hidden" name="idempreendimento" value={idempreendimento} />}
+          {subject && <input type="hidden" name="subject" value={subject} />}
           <div class="form-group">
             <span>Nome *</span>
             <input type="text" name="nome">
