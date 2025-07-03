@@ -1469,6 +1469,7 @@ a:hover {
   border-color: #FF4919;
   color: #FFF;
 }
+
 .icon-content:hover svg{
   fill: #FFF;
 }
@@ -1485,6 +1486,13 @@ a:hover {
 .icon-content:hover:before {
   transform: scale(1.05);
   opacity: 1;
+}
+.icon-content p{
+  font-size: 13px;
+  color: #665D56;
+}
+.icon-content:hover p {
+  color: #fff;
 }
 .icon-content figure {
   width: 100%;
@@ -3041,9 +3049,8 @@ a:hover {
 }
 .recent-news .content h3 {
   width: 100%;
-  min-height: 73px;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 26px;
   line-height: 1.4;
 }
