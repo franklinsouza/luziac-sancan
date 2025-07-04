@@ -1487,11 +1487,11 @@ a:hover {
   transform: scale(1.05);
   opacity: 1;
 }
-.icon-content p{
+.icon-content p.obs{
   font-size: 13px;
   color: #665D56;
 }
-.icon-content:hover p {
+.icon-content:hover p.obs {
   color: #fff;
 }
 .icon-content figure {
