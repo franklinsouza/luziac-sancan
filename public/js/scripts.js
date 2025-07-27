@@ -54,7 +54,7 @@
 
 
     // PAGE TRANSITION
-    $('body a').on('click', function (e) {
+/*    $('body a').on('click', function (e) {
       if (typeof $(this).data('fancybox') == 'undefined') {
         e.preventDefault();
         var url = this.getAttribute("href");
@@ -72,7 +72,7 @@
           }, 1000);
         }
       }
-    });
+    });*/
 
 
     // LOGO HOVER
@@ -87,7 +87,25 @@
         });
       });
 
+      
+      $('.chats-btn').on('click', function() {
+        $(this).toggleClass('animation');
+        $('.container-chats-btn').toggleClass('open');
 
+        if(!$('.cs-main-container.main-container').hasClass('hidden')){
+          $('.cs-main-container.main-container').addClass('hidden');
+        }
+
+      });
+
+      $('.morada-btn').on('click', function(){
+        $('.cs-main-container.main-container').toggleClass('hidden');
+      });
+
+      $('.weni-btn').on('click', function(){
+        //$('.push-launcher').not('.weni-btn').click();
+        $('.push-launcher').click();
+      });
   });
   // END DOCUMENT READY
 

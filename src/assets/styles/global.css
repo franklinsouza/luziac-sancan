@@ -156,7 +156,7 @@ input[type=text], input[type=email], input[type=search], input[type=password] {
   padding: 0 30px;
 }
 
-input[type=submit], input[type=button], button[type=button], button[type=submit] {
+input[type=submit], input[type=button], button[type=submit] {
   height: 68px;
   border: none;
   background: #FF4919;
@@ -169,6 +169,9 @@ input[type=submit], input[type=button], button[type=button], button[type=submit]
 button[type=submit] {
   margin: 0 auto;
   display: block;
+}
+button[type=button] {
+  border: none;
 }
 
 textarea {
@@ -198,6 +201,138 @@ a:hover {
 }
 .bg-full {
   background-size: cover;
+}
+
+.container-chats-btn {
+  position: fixed;
+  right: 25px;
+  bottom: 16px;
+  z-index: 1;
+}
+
+.chats-btn {
+  background-color: #FF4919;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.opt-btn {
+  width: max-content;
+  background-color: #FF4919;
+  color: #FFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 15px;
+  position: absolute;
+  opacity: 0;
+  transform: translateX(calc(100% + 15px));
+  transition: all 0.25s ease-in-out;
+}
+
+.chats-btn:hover,
+.opt-btn:hover {
+  background-color: #fc683f;
+}
+
+.opt-btn svg,
+.opt-btn svg {
+  flex-shrink: 0;
+}
+
+.container-chats-btn.open .opt-btn {
+  right: 0;
+  transform: initial;
+  opacity: 1;
+}
+
+.container-chats-btn.open .opt-btn:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.container-chats-btn.open .opt-btn:nth-child(2) {
+  transition-delay: 0s;
+}
+
+.container-chats-btn.open .chats-btn .chat-icon {
+  display: none;
+}
+
+.container-chats-btn:not(.open) .chats-btn .close-icon {
+  display: none;
+}
+
+.weni-btn {
+  top: -60px;
+}
+.morada-btn {
+  top: -120px;
+}
+
+
+.toggle-icon,
+.push-launcher {
+  visibility: hidden;
+  pointer-events: none;
+  display: none !important;
+}
+
+#chat-application-id {
+  bottom: 92px !important;
+}
+
+.animation {
+  animation: animation 2s infinite ease-in-out;
+}
+
+@keyframes animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#sales-specialist-form {
+  text-align: center;
+}
+
+#sales-specialist-form .container-btns {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+#sales-specialist-form .container-btns a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+#sales-specialist-form .container-btns a svg {
+  flex-shrink: 0;
+}
+.contact-btn {
+  background-color: #FF4919;
+  width: 100%;
+  display: block;
+  color: #FFF; 
+  text-align: center;
+  padding: 15px 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.contact-btn:hover {
+  background-color: #fc683f;
+  text-decoration: none;
+  color: #fff;
 }
 
 .icons-list {
@@ -976,6 +1111,7 @@ a:hover {
   background: #FF4919;
   padding: 30px;
   border-radius: 10px;
+  border: 1px solid #FFF;
 }
 .navbar .site-menu ul li ul:before {
   content: "";
@@ -1032,14 +1168,15 @@ a:hover {
   bottom: 0;
   height: 2px;
   width: 0;
-  background: #FF4919;
+  background: #3B3129;
   transition: width 0.25s ease;
 }
 .navbar .site-menu ul li a:hover:before {
   width: 100%;
-  background: #FF4919;
+  background: #3B3129;
   transition: width 0.25s ease;
 }
+
 .navbar .site-menu ul li a:hover:after {
   width: 100%;
   background: transparent;
@@ -3700,9 +3837,13 @@ body.page-hub-br .page-header .logo-content {
 body.page-hub-br .navbar .site-menu ul li ul {
   border: 1px solid #FFF;
 }
+body.page-hub-br .navbar .site-menu ul li a:after, 
+body.page-hub-br .navbar .site-menu ul li a:hover:before {
+  background: #fff;
+}
 /* Hub BR */
 
-/* Natura Granja - ok */
+/* Natura Granja */
 body.page-natura-granja .page-header,
 body.page-natura-granja .section-title h6:before,
 body.page-natura-granja .navbar.sticky,
@@ -3714,7 +3855,7 @@ body.page-natura-granja .core-values-box h6:before,
 body.page-natura-granja .services-list-box .button,
 body.page-natura-granja .navbar .site-menu ul li ul,
 body.page-natura-granja .side-widget,
-body.page-natura-granja  button[type="submit"]  {
+body.page-natura-granja  button[type="submit"] {
   background-color: #4C6842;
 }
 
@@ -3749,6 +3890,10 @@ body.page-natura-granja .page-header .logo-content {
 body.page-natura-granja .navbar .site-menu ul li ul {
   border: 1px solid #FFF;
 }
+body.page-natura-granja .navbar .site-menu ul li a:after, 
+body.page-natura-granja .navbar .site-menu ul li a:hover:before {
+  background: #fff;
+}
 /* Natura Granja */
 
 /* Reserva falta logo*/
@@ -3764,31 +3909,35 @@ body.page-reserva-caucaia .services-list-box .button,
 body.page-reserva-caucaia .navbar .site-menu ul li ul,
 body.page-reserva-caucaia .side-widget,
 body.page-reserva-caucaia  button[type="submit"] {
-  background-color: #55308B;
+  background-color: #8F1B5C;
 }
 
 body.page-reserva-caucaia .primary-color,
 body.page-reserva-caucaia .navbar .navbar-button,
 body.page-reserva-caucaia .percent-list li span:last-child {
-  color: #55308B;
+  color: #8F1B5C;
 }
 
 body.page-reserva-caucaia .content-section svg {
-  fill: #55308B;
+  fill: #8F1B5C;
 }
 
 body.page-reserva-caucaia .icons-list li:hover svg {
   fill: #FFF;
 }
 body.page-reserva-caucaia .percent-list li .percentage {
-  background-color: #55308B;
+  background-color: #8F1B5C;
   opacity: .3;
 }
 body.page-reserva-caucaia .page-header .logo-content {
-  border: 1px solid #55308B;
+  border: 1px solid #8F1B5C;
 }
 body.page-reserva-caucaia .navbar .site-menu ul li ul {
   border: 1px solid #FFF;
+}
+body.page-reserva-caucaia .navbar .site-menu ul li a:after, 
+body.page-reserva-caucaia .navbar .site-menu ul li a:hover:before {
+  background: #fff;
 }
 /* Reserva*/
 
@@ -3829,6 +3978,10 @@ body.page-acqua-ibiuna .page-header .logo-content {
 body.page-acqua-ibiuna .navbar .site-menu ul li ul {
   border: 1px solid #FFF;
 }
+body.page-acqua-ibiuna .navbar .site-menu ul li a:after, 
+body.page-acqua-ibiuna .navbar .site-menu ul li a:hover:before {
+  background: #fff;
+}
 /* Acqua ibiuna */
 
 /* Roselandia - ok */
@@ -3865,15 +4018,16 @@ body.page-roselandia .icons-list li:hover svg {
 }
 
 body.page-roselandia .page-header .logo-content {
-  border: 1px solid #FFF;
-  background-color: #f47b3e;
+  border: 1px solid #f47b3e;
 }
 body.page-roselandia .navbar .site-menu ul li ul {
   border: 1px solid #FFF;
 }
+body.page-roselandia .navbar .site-menu ul li a:after, 
+body.page-roselandia .navbar .site-menu ul li a:hover:before {
+  background: #fff;
+}
 /* Roselandia */
-
-
 
 /* RESPONSIVE MEDIUM  */
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {

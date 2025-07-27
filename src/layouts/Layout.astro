@@ -1,72 +1,149 @@
 ---
-import '../assets/styles/bootstrap.min.css';
-import '../assets/styles/global.css';
-import '../assets/styles/fancybox.min.css';
-import '../assets/styles/lineicons.css';
-import '../assets/styles/odometer.min.css';
-import '../assets/styles/swiper.min.css';
+import "../assets/styles/bootstrap.min.css";
+import "../assets/styles/global.css";
+import "../assets/styles/fancybox.min.css";
+import "../assets/styles/lineicons.css";
+import "../assets/styles/odometer.min.css";
+import "../assets/styles/swiper.min.css";
 
-import Footer from '../components/layout/Footer.astro';
-import Navigation from '../components/layout/Navigation.astro';
+import Footer from "../components/layout/Footer.astro";
+import Navigation from "../components/layout/Navigation.astro";
 
 const { title, pageClass } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="description" content="Desde 1954 atuando no setor de empreendimentos imobiliários">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Desde 1954 atuando no setor de empreendimentos imobiliários"
+    />
 
-			<!-- Facebook Meta Tags -->
-		<meta property="og:url" content="https://www.sancan.com.br">
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="SANCAN">
-		<meta property="og:description" content="Desde 1954 atuando no setor de empreendimentos imobiliários">
-		<meta property="og:image" content="https://sancan.vercel.app/og-image.png">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.sancan.com.br" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SANCAN" />
+    <meta
+      property="og:description"
+      content="Desde 1954 atuando no setor de empreendimentos imobiliários"
+    />
+    <meta
+      property="og:image"
+      content="https://sancan.vercel.app/og-image.png"
+    />
 
-		<!-- Twitter Meta Tags -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta property="twitter:domain" content=sancan.com.br">
-		<meta property="twitter:url" content="https://www.sancan.com.br">
-		<meta name="twitter:title" content="SANCAN">
-		<meta name="twitter:description" content="Desde 1954 atuando no setor de empreendimentos imobiliários">
-		<meta name="twitter:image" content="https://sancan.vercel.app/og-image.png">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content='sancan.com.br"' />
+    <meta property="twitter:url" content="https://www.sancan.com.br" />
+    <meta name="twitter:title" content="SANCAN" />
+    <meta
+      name="twitter:description"
+      content="Desde 1954 atuando no setor de empreendimentos imobiliários"
+    />
+    <meta
+      name="twitter:image"
+      content="https://sancan.vercel.app/og-image.png"
+    />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
 
-		<!-- FAVICON FILES -->
-		<link href="/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
-		<link href="/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
-		<link href="/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
-		<link href="/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon">
-		<link href="/favicon.png" rel="shortcut icon">
+    <!-- FAVICON FILES -->
+    <link
+      href="/apple-touch-icon-144-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="144x144"
+    />
+    <link
+      href="/apple-touch-icon-114-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="114x114"
+    />
+    <link
+      href="/apple-touch-icon-72-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="72x72"
+    />
+    <link href="/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon" />
+    <link href="/favicon.png" rel="shortcut icon" />
 
-		<meta name="generator" content={Astro.generator} />
-		<title>SANCAN | {title}</title>
-	</head>
-	<body class={pageClass}>
-		<div class="first-transition"></div>
-		<!-- end first-transition -->
-		<div class="page-transition"></div>
-		<!-- end page-transition -->
+    <meta name="generator" content={Astro.generator} />
+    <title>SANCAN | {title}</title>
+  </head>
+  <body class={pageClass}>
+    <div class="first-transition"></div>
+    <!-- end first-transition -->
+    <div class="page-transition"></div>
+    <!-- end page-transition -->
 
-		<Navigation />
-		<slot />
-		<Footer />
+    <Navigation />
+    <slot />
+    <Footer />
 
-		<script is:inline src="/js/jquery.min.js"></script> 
-		<script is:inline src="/js/bootstrap.min.js"></script> 
-		<script is:inline src="/js/swiper.min.js"></script> 
-		<script is:inline src="/js/fancybox.min.js"></script> 
-		<script is:inline src="/js/odometer.min.js"></script> 
-		<script is:inline src="/js/isotope.min.js"></script>
-		<script is:inline src="/js/jquery.validate.min.js "></script>
-		<script is:inline src="https://cdn.jsdelivr.net/npm/jquery-mask-plugin@1.14.16/dist/jquery.mask.min.js "></script>
-		<script is:inline src="/js/scripts.js"></script>
-		<script is:inline src="/js/sendform.js"></script>
-	</body>
+    <div class="container-chats-btn">      
+      <button type="button" class="morada-btn opt-btn" title="Canal de vendas">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#FFF" viewBox="0 0 256 256"><path d="M216,50H40A14,14,0,0,0,26,64V224a13.88,13.88,0,0,0,8.09,12.69A14.11,14.11,0,0,0,40,238a13.87,13.87,0,0,0,9-3.31l.06-.05L82.23,206H216a14,14,0,0,0,14-14V64A14,14,0,0,0,216,50Zm2,142a2,2,0,0,1-2,2H80a6,6,0,0,0-3.92,1.46L41.26,225.53A2,2,0,0,1,38,224V64a2,2,0,0,1,2-2H216a2,2,0,0,1,2,2Zm-52-80a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,112Zm0,32a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,144Z"></path></svg>
+        <span>Canal de Vendas</span>
+      </button>
+
+      <button type="button" class="weni-btn opt-btn" title="Atendimento ao cliente">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#FFF" viewBox="0 0 256 256"><path d="M216,50H40A14,14,0,0,0,26,64V224a13.88,13.88,0,0,0,8.09,12.69A14.11,14.11,0,0,0,40,238a13.87,13.87,0,0,0,9-3.31l.06-.05L82.23,206H216a14,14,0,0,0,14-14V64A14,14,0,0,0,216,50Zm2,142a2,2,0,0,1-2,2H80a6,6,0,0,0-3.92,1.46L41.26,225.53A2,2,0,0,1,38,224V64a2,2,0,0,1,2-2H216a2,2,0,0,1,2,2Zm-52-80a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,112Zm0,32a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,144Z"></path></svg>
+        <span>Atendimento ao Cliente</span>
+      </button>
+
+      <button type="button" class="chats-btn animation" title="Chat">
+        <svg xmlns="http://www.w3.org/2000/svg" class="chat-icon" width="40" height="40" fill="#FFF" viewBox="0 0 256 256"><path d="M232,96a16,16,0,0,0-16-16H184V48a16,16,0,0,0-16-16H40A16,16,0,0,0,24,48V176a8,8,0,0,0,13,6.22L72,154V184a16,16,0,0,0,16,16h93.59L219,230.22a8,8,0,0,0,5,1.78,8,8,0,0,0,8-8Zm-42.55,89.78a8,8,0,0,0-5-1.78H88V152h80a16,16,0,0,0,16-16V96h32V207.25Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="close-icon" width="35" height="35" fill="#FFF" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>
+      </button>
+    </div>
+
+    <script is:inline src="/js/jquery.min.js"></script>
+    <script is:inline src="/js/bootstrap.min.js"></script>
+    <script is:inline src="/js/swiper.min.js"></script>
+    <script is:inline src="/js/fancybox.min.js"></script>
+    <script is:inline src="/js/odometer.min.js"></script>
+    <script is:inline src="/js/isotope.min.js"></script>
+    <script is:inline src="/js/jquery.validate.min.js "></script>
+    <script
+      is:inline
+      src="https://cdn.jsdelivr.net/npm/jquery-mask-plugin@1.14.16/dist/jquery.mask.min.js "
+    ></script>
+    <script is:inline src="/js/scripts.js"></script>
+    <script is:inline src="/js/sendform.js"></script>
+
+    <script
+      src="https://mia-chat-widget.morada.ai/chat-widget.js"
+      data-id="deb26891-48e0-4129-8af6-eb8edaddf166"
+      data-token="8eLKrPcbF5MXtKQGmbLsKB"
+      data-locale="pt-BR">
+    </script>
+    <script>
+      (function (d, s, u) {
+        let h = d.getElementsByTagName(s)[0],
+          k = d.createElement(s);
+        k.onload = function () {
+          let l = d.createElement(s);
+          l.src = u;
+          l.async = true;
+          h.parentNode.insertBefore(l, k.nextSibling);
+        };
+        k.async = true;
+        k.src = "https://storage.googleapis.com/push-webchat/wwc-latest.js";
+        h.parentNode.insertBefore(k, h);
+      })(
+        document,
+        "script",
+        "https://weni-sp-integrations-production.s3.amazonaws.com/apptypes/wwc/9c43d2a6-1dc5-4be1-8499-a8fd530d1587/script.js",
+      );
+    </script>
+
+  </body>
 </html>
