@@ -28,7 +28,7 @@ import foto20 from '../../../assets/images/reserva-nova-caucaia/complexo-praia-3
 import foto21 from '../../../assets/images/reserva-nova-caucaia/complexo-society-1-1200x675.webp';
 import foto22 from '../../../assets/images/reserva-nova-caucaia/complexo-society-2-1200x675.webp';
 import foto23 from '../../../assets/images/reserva-nova-caucaia/complexo-society-3-1200x675.webp';
-
+import video from '../../../assets/images/reserva-nova-caucaia/nova-caucaia.mp4';
 
 import Contato from "../../../components/layout/Contato.astro";
 ---
@@ -84,7 +84,7 @@ import Contato from "../../../components/layout/Contato.astro";
   </section>
   <!-- end content-section -->
 
-    <section class="content-section">
+  <section class="content-section">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -150,6 +150,14 @@ import Contato from "../../../components/layout/Contato.astro";
     <!-- end container --> 
   </section>
   <!-- end content-section -->
+
+  <section>
+    <div class="container">
+      <video src={video} controls class="video">
+        Seu navegador não é compatível com esse tipo de midia.
+      </video>
+    </div>
+  </section>
 
   <section class="no-bottom-spacing content-section">
     <div class="col-12">

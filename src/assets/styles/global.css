@@ -335,6 +335,21 @@ a:hover {
   color: #fff;
 }
 
+.video {
+  width: 100%;
+}
+
+.books-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.books-line img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .icons-list {
   width: 100%;
   display: grid;
@@ -4062,6 +4077,13 @@ body.page-roselandia .navbar .site-menu ul li a:hover:before {
 
   .logo-item {
     padding: 0 15px;
+  }
+
+  .books-line {
+    flex-direction: column;
+  }
+  .books-line img {
+    max-width: 970px;
   }
 
   .footer-bar h2 {
